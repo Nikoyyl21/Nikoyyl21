@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 主页效果预览</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; padding: 32px 16px 64px; background: #ffffff; color: #1f2328;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+         font-size: 16px; line-height: 1.65; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  .note { max-width: 900px; margin: 0 auto 24px; padding: 10px 14px; border: 1px solid #d0d7de;
+          border-radius: 8px; background: #f6f8fa; font-size: 13px; color: #57606a; }
+  .box { border: 1px solid #d0d7de; border-radius: 8px; padding: 32px 40px; }
+  img { display: block; max-width: 100%; height: auto; border-radius: 8px; }
+  .center { text-align: center; }
+  code { background: #eff1f3; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 { font-size: 22px; font-weight: 600; border-bottom: 1px solid #d8dee4; padding-bottom: 8px; margin-top: 32px; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #d0d7de; padding: 8px 13px; text-align: left; vertical-align: top; }
+  th { background: #f6f8fa; }
+  details { border: 1px solid #d0d7de; border-radius: 8px; padding: 10px 16px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 500; }
+  blockquote { border-left: 4px solid #d0d7de; color: #57606a; margin: 16px 0; padding: 0 16px; }
+  hr { border: 0; border-top: 1px solid #d8dee4; margin: 32px 0; }
+  sub { color: #6e7781; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d1117; color: #e6edf3; }
+    .note, .box { border-color: #30363d; }
+    .note, th, code { background: #161b22; }
+    .note, blockquote, sub { color: #8b949e; }
+    h2, table, th, td, details { border-color: #30363d; }
+    a { color: #58a6ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="note">效果预览，内容以 README.md 为准。折叠卡片可以直接点开，横幅在深色模式下会自动换成深色版。</div>
+  <div class="box">
+
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+      <img src="assets/banner-light.svg" alt="Petry, AI foundation models and multimodal">
+    </picture>
+
+    <p class="center"><strong>我在帮做基模和多模态的研究员，找下一个值得投入的问题</strong></p>
+    <p class="center"><code>foundation models</code>　<code>multimodal</code>　<code>post-training</code>　<code>infra</code></p>
+    <p class="center"><a href="#scope">方向</a> · <a href="#who">我在找谁</a> · <a href="#contact">怎么联系</a> · <a href="#english">English</a></p>
+
+    <hr>
+    <h2>我在做什么</h2>
+    <p>长期跟踪国内基模与多模态团队的技术脉络，帮研究员判断下一个值得投入的问题。</p>
+    <p>先聊你在做的具体问题，不先聊岗位清单。</p>
+
+    <h2 id="scope">方向</h2>
+    <table>
+      <tr><th>方向</th><th>通常聊到的具体问题</th></tr>
+      <tr><td><strong>多模态与视频生成</strong></td><td>奖励模型、长时序一致性、可控生成的工程边界</td></tr>
+      <tr><td><strong>后训练与对齐</strong></td><td>DPO / GRPO 一族、扩散语言模型上的 RL 对齐</td></tr>
+      <tr><td><strong>文本大模型</strong></td><td>数据配比、MoE 取舍、长上下文与推理成本</td></tr>
+      <tr><td><strong>语音与 Infra</strong></td><td>端到端语音、训练与推理集群的真实约束</td></tr>
+    </table>
+
+    <h2 id="who">我在找谁</h2>
+    <details><summary><strong>研究员</strong>　想判断方向，或比较不同团队的路线差异</summary><p>从你在做的具体问题聊起，而不是从一份岗位清单聊起。可以直接问我某个团队在某个技术维度上处在什么位置。</p></details>
+    <details><summary><strong>Infra 与系统</strong>　关心集群规模、训练稳定性、推理成本</summary><p>会讲清楚不同环境真实的工程约束和取舍，包括不那么好看的部分。</p></details>
+    <details><summary><strong>多模态与生成</strong>　视频、图像、语音生成方向</summary><p>数据、算力、评价体系是不是真的支持你想做的事，这些可以摊开讲。</p></details>
+    <details><summary><strong>暂时不想动的人</strong>　只想先了解发生了什么</summary><p>不做任何决定也没关系，这类聊天我同样欢迎。</p></details>
+
+    <h2>为什么可以跟我聊</h2>
+    <p>按技术脉络和团队组织做梳理，不按 JD 关键词做匹配。</p>
+    <p>给同一技术维度上的横向对比，包括各自的取舍和代价。</p>
+    <p>不合适会直说，不硬推。</p>
+    <p>置顶仓库里是公开资料整理的技术图谱、作者索引和方向时间线。</p>
+
+    <h2 id="contact">怎么联系</h2>
+    <table>
+      <tr><th>方式</th><th>地址</th></tr>
+      <tr><td>邮箱</td><td><code>【待填：工作邮箱】</code></td></tr>
+      <tr><td>15 分钟预约</td><td><code>【待填：预约链接】</code></td></tr>
+      <tr><td>微信 / 飞书</td><td><code>【待填：二维码】</code></td></tr>
+    </table>
+    <blockquote>一对一沟通，不共享给任何第三方。可以先不透露姓名和现单位，只聊方向。你的信息不会出现在任何公开仓库或公开列表里。</blockquote>
+    <p class="center"><strong>预约 15 分钟，先匿名聊方向</strong></p>
+
+    <h2>最近在看的</h2>
+    <p>最近更新 2026-11-05　|　最近在看扩散语言模型上的 RL 对齐，以及视频生成奖励模型的可迁移性。</p>
+
+    <hr>
+    <h2 id="english">English</h2>
+    <p>I work with researchers in foundation models and multimodal generation on their next move. I track how teams and technical directions evolve, and I would rather discuss the specific problem you are working on than send you a job list.</p>
+    <p><strong>What I cover</strong> — multimodal and video generation, post-training and alignment, text foundation models, speech and infrastructure.</p>
+    <p><strong>The only ask</strong> — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.</p>
+    <p><code>【待填：工作邮箱】</code> · <code>【待填：预约链接】</code></p>
+
+    <hr>
+    <p class="center"><sub>公开资料整理　|　不含候选人信息与在招团队细节</sub></p>
+  </div>
+</div>
+</body>
+</html>

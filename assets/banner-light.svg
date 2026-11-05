@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Petry, AI foundation models and multimodal">
+  <rect width="1200" height="260" rx="16" fill="#F6F8FA"/>
+  <text x="64" y="110" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#1F2328" letter-spacing="-1">Petry</text>
+  <text x="66" y="150" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#57606A">AI foundation models / multimodal / infra</text>
+  <rect x="66" y="176" width="56" height="3" rx="1.5" fill="#0969DA"/>
+  <text x="66" y="210" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#6E7781">research directions, team landscapes, honest comparisons</text>
+  <g stroke="#C8D1DA" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M846 74 L966 58 M846 74 L966 128 M846 132 L966 58 M846 132 L966 128 M846 132 L966 198 M846 190 L966 128 M846 190 L966 198"/>
+    <path d="M966 58 L1096 92 M966 58 L1096 162 M966 128 L1096 92 M966 128 L1096 162 M966 198 L1096 162"/>
+  </g>
+  <g fill="#8C959F">
+    <circle cx="846" cy="74" r="5.5"/>
+    <circle cx="846" cy="190" r="5.5"/>
+    <circle cx="966" cy="58" r="5.5"/>
+    <circle cx="966" cy="198" r="5.5"/>
+    <circle cx="1096" cy="162" r="5.5"/>
+  </g>
+  <g fill="#0969DA">
+    <circle cx="846" cy="132" r="7"/>
+    <circle cx="966" cy="128" r="7"/>
+    <circle cx="1096" cy="92" r="7"/>
+  </g>
+</svg>
