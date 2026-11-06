@@ -61,7 +61,7 @@
   - 训练侧：TP / PP / EP 并行策略、MFU、训练稳定性
   - 推理侧：prefill-decode 分离、KV cache 与量化、SLO 下的单位 token 成本
   - 效率取舍：集群利用率与弹性调度、量化带来的精度损失
-- **评测 / 落地**（横切维度，单独列出）
+- **大模型评测**（横切维度，单独列出）
   - 评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge / pairwise arena、VBench 与时序一致性；按业务场景拆，不套通用榜单
   - 业务落地：离线指标落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集
   - 指标失真：judge 自偏好、benchmark 污染、评测集与真实分布偏移；榜单涨分不等于线上收益，离线代理指标怎么对齐真实业务收益仍是开放问题
@@ -165,7 +165,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 I track how foundation model and multimodal methods actually evolve, using public technical reports, papers and open-source implementations as primary sources.
 
-**What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
+**What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, LLM evaluation (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
 
 **A bit about me** — I tend to notice the changes that never make it into an announcement: a method family suddenly getting more investment, a quiet shift in how a team is organized, a small change in the author order of a technical report. Those signals often move earlier than leaderboard scores. I cross-check what can be verified against public sources, say plainly when something is still unconfirmed, and let rumors stop with me. Over the past year I have also helped many researchers think things through: some weighing whether a problem is still worth their time, some comparing two or three routes, some simply leaving with a clearer map of the field and no decision at all. Those are the conversations I enjoy most. Even if you are not looking at any opportunity right now, adding me on WeChat just to talk shop is more than welcome.
 
