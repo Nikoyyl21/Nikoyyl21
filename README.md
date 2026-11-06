@@ -44,21 +44,19 @@
   - 预训练与架构：MoE 专家路由与稀疏激活、数据配比与 mid-training 退火、RoPE 外推与 KV cache 成本
   - 后训练与对齐：DPO / PPO / GRPO 一族、RLVR 与可验证奖励、process reward model、扩散语言模型上的 RL 对齐（dLLM / EBPO）
   - 真实代价：reward hacking、KL 约束的取舍、scaling law 之外的数据墙；后训练收益有多少来自基座能力本身，仍是开放问题
-- **多模态 / 视频**
-  - 生成架构：DiT 与 flow matching、时空 VAE 压缩比、长时序一致性
-  - 奖励与可控：基于 GRPO 的奖励优化（Flow-GRPO / VideoReward）、运动物理合理性；可控性仍缺可靠的自动评测代理
-  - 数据与算力：训练数据配比与时空压缩的取舍，VBench 等自动指标和人类偏好之间仍有差距
-- **语音**
-  - 端到端语音：离散 codec token、流式推理与实时交互时延
-  - 多模态衔接：语音与文本、视觉的共享表征，副语言信息建模；自然度上去之后可控性怎么保证
-  - 工程约束：首包时延、长语音稳定性与端侧推理成本
+- **多模态 / 视频与图像生成**（重点）
+  - 预训练数据：视频与图像语料的清洗去重、质量过滤与配比，时空一致性与运动标注、图文对齐；数据配比基本决定可控性上限
+  - 生成结构：DiT 与 flow matching、时空 VAE 压缩比、长时序建模与分辨率外推，图像侧的控制分支与条件注入
+  - 参考与编辑生成：reference-based 生成与主体 / ID 一致性、指令式编辑与局部重绘、Flow-GRPO / VideoReward 一类奖励优化；可控性仍缺可靠的自动评测代理
+  - 语音并入同一共享表征下的另一路模态，顺带覆盖，不单独展开
 - **Infra / 推理系统**
   - 训练侧：TP / PP / EP 并行策略、MFU、训练稳定性
   - 推理侧：prefill-decode 分离、KV cache 与量化、SLO 下的单位 token 成本
   - 效率取舍：集群利用率与弹性调度、量化带来的精度损失
-- **评测 / 落地**
-  - 评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge、VBench 与时序一致性
-  - 业务落地：按业务场景拆口径，再落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集；榜单涨分不等于线上收益
+- **评测 / 落地**（横切维度，单独列出）
+  - 评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge / pairwise arena、VBench 与时序一致性；按业务场景拆，不套通用榜单
+  - 业务落地：离线指标落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集
+  - 指标失真：judge 自偏好、benchmark 污染、评测集与真实分布偏移；榜单涨分不等于线上收益，离线代理指标怎么对齐真实业务收益仍是开放问题
 
 <!-- ===== 区块 3：方法论（这段是专业度的主要支撑） ===== -->
 
@@ -97,7 +95,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 </details>
 
 <details>
-<summary><b>多模态与生成</b>　视频、图像、语音生成方向</summary>
+<summary><b>多模态与生成</b>　视频、图像生成方向</summary>
 
 <br>
 
@@ -163,7 +161,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 I track how foundation model and multimodal methods actually evolve, using public technical reports, papers and open-source implementations as primary sources.
 
-**What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Also multimodal and video generation (DiT / flow matching, spatial-temporal VAE compression, Flow-GRPO / VideoReward), speech (discrete codec tokens, streaming inference), systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO), and evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
+**What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
 
 **How I read a report** — archive by method family rather than product name, cross-check claims against OpenReview, arXiv, DBLP and institutional pages, keep ambiguous author candidates separate, and label every conclusion with a source and a confidence level.
 

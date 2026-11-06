@@ -72,18 +72,12 @@
           <li>真实代价：reward hacking、KL 约束的取舍、scaling law 之外的数据墙；后训练收益有多少来自基座能力本身，仍是开放问题</li>
         </ul>
       </li>
-      <li><strong>多模态 / 视频</strong>
+      <li><strong>多模态 / 视频与图像生成</strong>（重点）
         <ul>
-          <li>生成架构：DiT 与 flow matching、时空 VAE 压缩比、长时序一致性</li>
-          <li>奖励与可控：基于 GRPO 的奖励优化（Flow-GRPO / VideoReward）、运动物理合理性；可控性仍缺可靠的自动评测代理</li>
-          <li>数据与算力：训练数据配比与时空压缩的取舍，VBench 等自动指标和人类偏好之间仍有差距</li>
-        </ul>
-      </li>
-      <li><strong>语音</strong>
-        <ul>
-          <li>端到端语音：离散 codec token、流式推理与实时交互时延</li>
-          <li>多模态衔接：语音与文本、视觉的共享表征，副语言信息建模；自然度上去之后可控性怎么保证</li>
-          <li>工程约束：首包时延、长语音稳定性与端侧推理成本</li>
+          <li>预训练数据：视频与图像语料的清洗去重、质量过滤与配比，时空一致性与运动标注、图文对齐；数据配比基本决定可控性上限</li>
+          <li>生成结构：DiT 与 flow matching、时空 VAE 压缩比、长时序建模与分辨率外推，图像侧的控制分支与条件注入</li>
+          <li>参考与编辑生成：reference-based 生成与主体 / ID 一致性、指令式编辑与局部重绘、Flow-GRPO / VideoReward 一类奖励优化；可控性仍缺可靠的自动评测代理</li>
+          <li>语音并入同一共享表征下的另一路模态，顺带覆盖，不单独展开</li>
         </ul>
       </li>
       <li><strong>Infra / 推理系统</strong>
@@ -93,10 +87,11 @@
           <li>效率取舍：集群利用率与弹性调度、量化带来的精度损失</li>
         </ul>
       </li>
-      <li><strong>评测 / 落地</strong>
+      <li><strong>评测 / 落地</strong>（横切维度，单独列出）
         <ul>
-          <li>评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge、VBench 与时序一致性</li>
-          <li>业务落地：按业务场景拆口径，再落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集；榜单涨分不等于线上收益</li>
+          <li>评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge / pairwise arena、VBench 与时序一致性；按业务场景拆，不套通用榜单</li>
+          <li>业务落地：离线指标落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集</li>
+          <li>指标失真：judge 自偏好、benchmark 污染、评测集与真实分布偏移；榜单涨分不等于线上收益，离线代理指标怎么对齐真实业务收益仍是开放问题</li>
         </ul>
       </li>
     </ul>
@@ -112,7 +107,7 @@
     <h2 id="who">我在找谁</h2>
     <details><summary><strong>研究员</strong>　想判断方向，或比较不同实现的路线差异</summary><p>从你在做的具体问题聊起，基模能力边界、奖励信号设计，或者一个方法在更大规模上还成不成立。可以直接问我某条路线走到哪一步、瓶颈在哪。</p></details>
     <details><summary><strong>Infra 与系统</strong>　关心 MFU、并行策略和推理成本</summary><p>TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑和 SLO 的实际约束，都能摊开讲，包括不那么好看的部分。</p></details>
-    <details><summary><strong>多模态与生成</strong>　视频、图像、语音生成方向</summary><p>数据配比、时空压缩比、奖励模型怎么建、评测靠 VBench 还是人类偏好对齐，这些比岗位清单更值得先聊清楚。</p></details>
+    <details><summary><strong>多模态与生成</strong>　视频、图像生成方向</summary><p>数据配比、时空压缩比、奖励模型怎么建、评测靠 VBench 还是人类偏好对齐，这些比岗位清单更值得先聊清楚。</p></details>
     <details><summary><strong>暂时不想动的人</strong>　只想先了解发生了什么</summary><p>不做任何决定也没关系，这类聊天我同样欢迎。</p></details>
 
     <h2>为什么可以跟我聊</h2>
@@ -136,7 +131,7 @@
     <hr>
     <h2 id="english">English</h2>
     <p>I track how foundation model and multimodal methods actually evolve, using public technical reports, papers and open-source implementations as primary sources.</p>
-    <p><strong>What I cover</strong> — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Also multimodal and video generation (DiT / flow matching, spatial-temporal VAE compression, Flow-GRPO / VideoReward), speech (discrete codec tokens, streaming inference), systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO), and evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).</p>
+    <p><strong>What I cover</strong> — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).</p>
     <p><strong>How I read a report</strong> — archive by method family rather than product name, cross-check claims against OpenReview, arXiv, DBLP and institutional pages, keep ambiguous author candidates separate, and label every conclusion with a source and a confidence level.</p>
     <p><strong>The only ask</strong> — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.</p>
     <p><strong>Contact</strong> — <a href="mailto:18357766985@163.com">18357766985@163.com</a> or WeChat <code>Hello_le_0502</code>. A short message is enough; no CV, no name, no current employer needed. <strong>Full profile</strong> — <a href="https://nikoyyl21.github.io/">nikoyyl21.github.io</a></p>
