@@ -44,6 +44,7 @@
 - **后训练 / 对齐** — DPO / PPO / GRPO 一族、RLVR 与可验证奖励、process reward model、扩散语言模型上的 RL 对齐（dLLM / EBPO）；reward hacking 与 KL 约束的真实代价
 - **文本大模型** — MoE 专家路由与稀疏激活、预训练数据配比与 mid-training 退火、长上下文的 RoPE 外推与 KV cache 成本；scaling law 之外的数据墙
 - **语音 / Infra** — 端到端语音的离散 codec token 与流式推理；TP / PP / EP 并行策略、MFU、prefill-decode 分离，以及 SLO 约束下的单位 token 推理成本
+- **评测 / 落地** — pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge、VBench 与时序一致性；按业务场景拆评测口径，再落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集；榜单涨分不等于线上收益
 
 <!-- ===== 区块 3：方法论（这段是专业度的主要支撑） ===== -->
 
@@ -148,7 +149,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 I track how foundation model and multimodal methods actually evolve, using public technical reports, papers and open-source implementations as primary sources.
 
-**What I cover** — DiT and flow matching for video generation, GRPO-style reward optimization, RLVR and post-training alignment including diffusion language models, MoE routing, long-context extrapolation and KV cache economics, streaming speech codecs, and the systems side: TP / PP / EP parallelism, MFU, prefill-decode disaggregation.
+**What I cover** — DiT and flow matching for video generation, GRPO-style reward optimization, RLVR and post-training alignment including diffusion language models, MoE routing, long-context extrapolation and KV cache economics, streaming speech codecs, and the systems side: TP / PP / EP parallelism, MFU, prefill-decode disaggregation. I also track evaluation practice: verifiable rewards, human preference and LLM-as-a-judge, VBench-style video metrics, and how offline scores translate into production guardrails and real business metrics.
 
 **How I read a report** — archive by method family rather than product name, cross-check claims against OpenReview, arXiv, DBLP and institutional pages, keep ambiguous author candidates separate, and label every conclusion with a source and a confidence level.
 
