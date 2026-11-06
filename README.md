@@ -12,11 +12,13 @@
 
 <div align="center">
 
+**完整介绍页 → [nikoyyl21.github.io](https://nikoyyl21.github.io/)**　点开即读，无需登录
+
 **我在帮做基模和多模态的研究员，判断下一个值得投入的问题**
 
 `foundation models`　`post-training`　`multimodal generation`　`systems`
 
-**想聊就直接发一封邮件：[18357766985@163.com](mailto:18357766985@163.com)**　15 分钟，可以先不透露姓名和现单位
+**想聊就直接发一封邮件：[18357766985@163.com](mailto:18357766985@163.com)**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
 [方向](#scope) · [怎么读报告](#method) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
 
@@ -108,6 +110,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 不合适会直说，不硬推。
 
 <!-- ===== 区块 6：联系（已上线，以后有预约链接或二维码再加行） ===== -->
+<!-- 顶部还有一条落地页入口，指向 https://nikoyyl21.github.io/ -->
 
 <a name="contact"></a>
 
@@ -116,7 +119,8 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 | | |
 | :--- | :--- |
 | 邮箱 | [18357766985@163.com](mailto:18357766985@163.com) |
-| 15 分钟 | 直接发邮件约时间，标题写想聊的方向就行，不用附简历 |
+| 微信 | `Hello_le_0502`（添加时备注想聊的方向，不用附简历） |
+| 15 分钟 | 邮件或微信约时间都可以，标题写想聊的方向就行 |
 
 > 一对一沟通，不共享给任何第三方。可以先不透露姓名和现单位，只聊方向。你的信息不会出现在任何公开仓库或公开列表里。
 
@@ -150,7 +154,7 @@ I track how foundation model and multimodal methods actually evolve, using publi
 
 **The only ask** — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
-**Contact** — [18357766985@163.com](mailto:18357766985@163.com). A short email is enough; no CV, no name, no current employer needed.
+**Contact** — [18357766985@163.com](mailto:18357766985@163.com) or WeChat `Hello_le_0502`. A short message is enough; no CV, no name, no current employer needed. **Full profile** — https://nikoyyl21.github.io/
 
 ---
 
