@@ -1,5 +1,5 @@
 <!-- ==========================================================
-     骨架文件，不是终稿。每个可编辑区块都用注释标了出来。
+     已上线版本。每个可编辑区块都用注释标了出来。
      全局规则：不出现中文姓名、不出现未授权客户名、不出现候选人信息。
      术语原则：写方法族、真实取舍和开放问题，不堆关键词。
      改稿清单见 EDIT-ME.md
@@ -15,6 +15,8 @@
 **我在帮做基模和多模态的研究员，判断下一个值得投入的问题**
 
 `foundation models`　`post-training`　`multimodal generation`　`systems`
+
+**想聊就直接发一封邮件：[18357766985@163.com](mailto:18357766985@163.com)**　15 分钟，可以先不透露姓名和现单位
 
 [方向](#scope) · [怎么读报告](#method) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
 
@@ -107,7 +109,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 不合适会直说，不硬推。
 
-<!-- ===== 区块 6：联系（改这里，必填） ===== -->
+<!-- ===== 区块 6：联系（已上线，以后有预约链接或二维码再加行） ===== -->
 
 <a name="contact"></a>
 
@@ -115,15 +117,14 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 | | |
 | :--- | :--- |
-| 邮箱 | `【待填：工作邮箱】` |
-| 15 分钟预约 | `【待填：预约链接】` |
-| 微信 / 飞书 | `【待填：二维码】` |
+| 邮箱 | [18357766985@163.com](mailto:18357766985@163.com) |
+| 15 分钟 | 直接发邮件约时间，标题写想聊的方向就行，不用附简历 |
 
 > 一对一沟通，不共享给任何第三方。可以先不透露姓名和现单位，只聊方向。你的信息不会出现在任何公开仓库或公开列表里。
 
 <div align="center">
 
-**预约 15 分钟，先匿名聊方向**
+**发一封邮件，先匿名聊 15 分钟**
 
 </div>
 
@@ -151,7 +152,7 @@ I track how foundation model and multimodal methods actually evolve, using publi
 
 **The only ask** — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
-`【待填：工作邮箱】` · `【待填：预约链接】`
+**Contact** — [18357766985@163.com](mailto:18357766985@163.com). A short email is enough; no CV, no name, no current employer needed.
 
 ---
 
