@@ -6,47 +6,49 @@
 <title>GitHub 主页效果预览</title>
 <style>
   :root { color-scheme: light dark; }
-  body { margin: 0; padding: 32px 16px 64px; background: #ffffff; color: #1f2328;
+  body { margin: 0; padding: 32px 16px 64px; background: #eaf3ff; color: #123a5e;
          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif;
          font-size: 16px; line-height: 1.65; }
   .wrap { max-width: 900px; margin: 0 auto; }
-  .note { max-width: 900px; margin: 0 auto 24px; padding: 10px 14px; border: 1px solid #d0d7de;
-          border-radius: 8px; background: #f6f8fa; font-size: 13px; color: #57606a; }
-  .box { border: 1px solid #d0d7de; border-radius: 8px; padding: 32px 40px; }
+  .note { max-width: 900px; margin: 0 auto 24px; padding: 10px 14px; border: 1px solid #bcd8f4;
+          border-radius: 8px; background: #dcecff; font-size: 13px; color: #3d6a97; }
+  .box { border: 1px solid #c6dff7; border-radius: 8px; padding: 32px 40px;
+         background: #ffffff; box-shadow: 0 6px 24px rgba(21,94,168,0.07); }
   img { display: block; max-width: 100%; height: auto; border-radius: 8px; }
   .center { text-align: center; }
-  code { background: #eff1f3; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+  code { background: #eaf3ff; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
   a { color: #0969da; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h2 { font-size: 22px; font-weight: 600; border-bottom: 1px solid #d8dee4; padding-bottom: 8px; margin-top: 32px; }
+  h2 { font-size: 22px; font-weight: 600; border-bottom: 1px solid #d6e7f8; padding-bottom: 8px; margin-top: 32px; }
   table { border-collapse: collapse; width: 100%; margin: 16px 0; }
-  th, td { border: 1px solid #d0d7de; padding: 8px 13px; text-align: left; vertical-align: top; }
-  th { background: #f6f8fa; }
-  details { border: 1px solid #d0d7de; border-radius: 8px; padding: 10px 16px; margin: 10px 0; }
+  th, td { border: 1px solid #d6e7f8; padding: 8px 13px; text-align: left; vertical-align: top; }
+  th { background: #f2f8ff; }
+  details { border: 1px solid #d6e7f8; border-radius: 8px; padding: 10px 16px; margin: 10px 0; }
   summary { cursor: pointer; font-weight: 500; }
-  blockquote { border-left: 4px solid #d0d7de; color: #57606a; margin: 16px 0; padding: 0 16px; }
-  hr { border: 0; border-top: 1px solid #d8dee4; margin: 32px 0; }
-  sub { color: #6e7781; }
+  blockquote { border-left: 4px solid #bcd8f4; color: #557fa8; margin: 16px 0; padding: 0 16px; }
+  hr { border: 0; border-top: 1px solid #d6e7f8; margin: 32px 0; }
+  sub { color: #6e8fae; }
   ol { padding-left: 24px; }
   li { margin: 6px 0; }
   @media (prefers-color-scheme: dark) {
-    body { background: #0d1117; color: #e6edf3; }
-    .note, .box { border-color: #30363d; }
-    .note, th, code { background: #161b22; }
-    .note, blockquote, sub { color: #8b949e; }
-    h2, table, th, td, details { border-color: #30363d; }
+    body { background: #0a1a2b; color: #e6edf3; }
+    .box { background: #0d2339; border-color: #24486b; box-shadow: none; }
+    .note { background: #102a44; border-color: #24486b; color: #9fc4ea; }
+    th, code { background: #122a44; }
+    blockquote, sub { color: #8b949e; }
+    h2, table, th, td, details { border-color: #24486b; }
     a { color: #58a6ff; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="note">效果预览，内容以 README.md 为准。折叠卡片可以直接点开，横幅在深色模式下会自动换成深色版。</div>
+  <div class="note">效果预览，内容以 README.md 为准。折叠卡片可以直接点开，横幅在深色模式下会自动换成深蓝版。浅蓝底色来自仓库内的 SVG 横幅；GitHub 页面本身的底色由平台控制，线上只有横幅区域是浅蓝。</div>
   <div class="box">
 
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-      <img src="assets/banner-light.svg" alt="Petry, foundation models and multimodal generation">
+      <img src="assets/banner-light.svg" alt="Petry, multimodal inputs converging into a shared latent space">
     </picture>
 
     <p class="center"><strong>我在帮做基模和多模态的研究员，判断下一个值得投入的问题</strong></p>
@@ -62,10 +64,10 @@
     <h2 id="scope">方向</h2>
     <table>
       <tr><th>方向</th><th>方法族与开放问题</th></tr>
-      <tr><td><strong>多模态与视频生成</strong></td><td>DiT 与 flow matching、基于 GRPO 的奖励优化（Flow-GRPO / VideoReward）、时空 VAE 压缩比与长时序一致性；可控性和运动物理合理性仍缺可靠的自动评测代理</td></tr>
-      <tr><td><strong>后训练与对齐</strong></td><td>DPO / PPO / GRPO 一族、RLVR 与可验证奖励、process reward model、扩散语言模型上的 RL 对齐（dLLM / EBPO）；reward hacking 与 KL 约束的真实代价</td></tr>
+      <tr><td><strong>多模态 / 视频</strong></td><td>DiT 与 flow matching、基于 GRPO 的奖励优化（Flow-GRPO / VideoReward）、时空 VAE 压缩比与长时序一致性；可控性和运动物理合理性仍缺可靠的自动评测代理</td></tr>
+      <tr><td><strong>后训练 / 对齐</strong></td><td>DPO / PPO / GRPO 一族、RLVR 与可验证奖励、process reward model、扩散语言模型上的 RL 对齐（dLLM / EBPO）；reward hacking 与 KL 约束的真实代价</td></tr>
       <tr><td><strong>文本大模型</strong></td><td>MoE 专家路由与稀疏激活、预训练数据配比与 mid-training 退火、长上下文的 RoPE 外推与 KV cache 成本；scaling law 之外的数据墙</td></tr>
-      <tr><td><strong>语音与 Infra</strong></td><td>端到端语音的离散 codec token 与流式推理；TP / PP / EP 并行策略、MFU、prefill-decode 分离，以及 SLO 约束下的单位 token 推理成本</td></tr>
+      <tr><td><strong>语音 / Infra</strong></td><td>端到端语音的离散 codec token 与流式推理；TP / PP / EP 并行策略、MFU、prefill-decode 分离，以及 SLO 约束下的单位 token 推理成本</td></tr>
     </table>
 
     <h2 id="method">怎么读一份技术报告</h2>
@@ -108,6 +110,10 @@
     <p><strong>Contact</strong> — <a href="mailto:18357766985@163.com">18357766985@163.com</a>. A short email is enough; no CV, no name, no current employer needed.</p>
 
     <hr>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/agi-strip-dark.svg">
+      <img src="assets/agi-strip-light.svg" alt="Motif: sparse activation flowing into shared representations">
+    </picture>
     <p class="center"><sub>公开资料整理　|　不含候选人信息与在招团队细节</sub></p>
   </div>
 </div>

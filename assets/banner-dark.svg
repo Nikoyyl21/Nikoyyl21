@@ -1,24 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Petry, foundation models and multimodal generation">
-  <rect width="1200" height="260" rx="16" fill="#161B22"/>
-  <text x="64" y="110" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E6EDF3" letter-spacing="-1">Petry</text>
-  <text x="66" y="150" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#8B949E">foundation models / post-training / multimodal / infra</text>
-  <rect x="66" y="176" width="56" height="3" rx="1.5" fill="#58A6FF"/>
-  <text x="66" y="210" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#6E7681">method families, compute constraints, honest trade-offs</text>
-  <text x="846" y="232" font-family="Consolas,Menlo,monospace" font-size="13" fill="#6E7681" letter-spacing="1">DiT / GRPO / MoE / EP</text>
-  <g stroke="#30363D" stroke-width="1.5" fill="none" stroke-linecap="round">
-    <path d="M846 74 L966 58 M846 74 L966 128 M846 132 L966 58 M846 132 L966 128 M846 132 L966 198 M846 190 L966 128 M846 190 L966 198"/>
-    <path d="M966 58 L1096 92 M966 58 L1096 162 M966 128 L1096 92 M966 128 L1096 162 M966 198 L1096 162"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Petry, foundation models, multimodal inputs converging into a shared latent space">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1E33"/>
+      <stop offset="1" stop-color="#123551"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#2A5B8C" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2A5B8C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="16" fill="none" stroke="#28527A" stroke-width="1"/>
+
+  <g stroke="#1D4063" stroke-width="1" opacity="0.5">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+    <path d="M60 0 V300 M180 0 V300 M300 0 V300 M420 0 V300 M540 0 V300 M660 0 V300 M780 0 V300 M900 0 V300 M1020 0 V300 M1140 0 V300"/>
   </g>
-  <g fill="#6E7681">
-    <circle cx="846" cy="74" r="5.5"/>
-    <circle cx="846" cy="190" r="5.5"/>
-    <circle cx="966" cy="58" r="5.5"/>
-    <circle cx="966" cy="198" r="5.5"/>
-    <circle cx="1096" cy="162" r="5.5"/>
+  <g stroke="#2C5A86" fill="none" stroke-width="1.2" opacity="0.5">
+    <path d="M700 226 C820 186 920 246 1040 196 S1170 146 1200 126"/>
+    <path d="M700 250 C820 210 920 270 1040 220 S1170 170 1200 150"/>
+    <path d="M700 274 C820 234 920 294 1050 244 S1170 196 1200 176"/>
+  </g>
+  <circle cx="930" cy="150" r="215" fill="url(#glow)"/>
+
+  <text x="64" y="112" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E8F2FF" letter-spacing="-1">Petry</text>
+  <text x="66" y="152" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#9FC4EA">foundation models / post-training / multimodal / infra</text>
+  <rect x="66" y="178" width="56" height="3" rx="1.5" fill="#58A6FF"/>
+  <text x="66" y="212" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7FA9D0">method families, compute constraints, honest trade-offs</text>
+  <text x="66" y="242" font-family="Consolas,Menlo,monospace" font-size="12" fill="#5E8CB5" letter-spacing="1">AGI / shared latent space / capability transfer</text>
+
+  <text x="746" y="44" font-family="Consolas,Menlo,monospace" font-size="11" fill="#6E9AC6" letter-spacing="1">MODALITIES -&gt; SHARED LATENT -&gt; CAPABILITIES</text>
+
+  <g stroke="#79B6EE" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M752 68 H788 M752 76 H788 M752 84 H776"/>
+    <rect x="752" y="110" width="36" height="30" rx="4"/>
+    <path d="M754 136 L764 126 L772 132 L786 118"/>
+    <circle cx="761" cy="119" r="2.5" fill="#79B6EE" stroke="none"/>
+    <path d="M754 170 V178 M762 164 V184 M770 160 V188 M778 165 V183 M786 169 V179"/>
+    <rect x="752" y="206" width="36" height="30" rx="4"/>
+    <path d="M766 214 L766 228 L778 221 Z" fill="#79B6EE" stroke="none"/>
+  </g>
+
+  <g stroke="#3E79AE" stroke-width="1.4" fill="none" opacity="0.7">
+    <path d="M792 78 C830 78 842 120 876 138"/>
+    <path d="M792 126 C830 126 846 140 876 147"/>
+    <path d="M792 174 C830 174 846 160 876 153"/>
+    <path d="M792 222 C830 222 842 180 876 162"/>
+  </g>
+
+  <circle cx="930" cy="150" r="52" fill="none" stroke="#3E79AE" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.8"/>
+  <circle cx="930" cy="150" r="34" fill="#122A44" fill-opacity="0.7" stroke="#58A6FF" stroke-width="1.6"/>
+  <g fill="#3E6EA1" opacity="0.7">
+    <circle cx="916" cy="136" r="2.2"/>
+    <circle cx="926" cy="136" r="2.2"/>
+    <circle cx="946" cy="136" r="2.2"/>
+    <circle cx="926" cy="146" r="2.2"/>
+    <circle cx="936" cy="146" r="2.2"/>
+    <circle cx="946" cy="146" r="2.2"/>
+    <circle cx="916" cy="156" r="2.2"/>
+    <circle cx="936" cy="156" r="2.2"/>
+    <circle cx="946" cy="156" r="2.2"/>
+    <circle cx="916" cy="166" r="2.2"/>
+    <circle cx="926" cy="166" r="2.2"/>
+    <circle cx="936" cy="166" r="2.2"/>
   </g>
   <g fill="#58A6FF">
-    <circle cx="846" cy="132" r="7"/>
-    <circle cx="966" cy="128" r="7"/>
-    <circle cx="1096" cy="92" r="7"/>
+    <circle cx="936" cy="136" r="2.8"/>
+    <circle cx="916" cy="146" r="2.8"/>
+    <circle cx="926" cy="156" r="2.8"/>
+    <circle cx="946" cy="166" r="2.8"/>
   </g>
+  <g fill="#6E9AC6" opacity="0.6">
+    <circle cx="930" cy="98" r="2"/>
+    <circle cx="982" cy="150" r="2"/>
+    <circle cx="930" cy="202" r="2"/>
+    <circle cx="878" cy="150" r="2"/>
+  </g>
+
+  <g stroke="#3E79AE" stroke-width="1.4" fill="none" opacity="0.7">
+    <path d="M984 140 C1020 108 1040 78 1068 76"/>
+    <path d="M984 147 C1020 132 1040 126 1068 126"/>
+    <path d="M984 153 C1020 168 1040 176 1068 176"/>
+    <path d="M984 160 C1020 200 1040 224 1068 226"/>
+  </g>
+  <g fill="#58A6FF">
+    <circle cx="1070" cy="76" r="4.5"/>
+    <circle cx="1070" cy="176" r="4.5"/>
+  </g>
+  <g fill="#6E9AC6" opacity="0.7">
+    <circle cx="1070" cy="126" r="4"/>
+    <circle cx="1070" cy="226" r="4"/>
+  </g>
+  <g font-family="Consolas,Menlo,monospace" font-size="10" fill="#79A8D4" letter-spacing="0.5">
+    <text x="1082" y="80">reason</text>
+    <text x="1082" y="130">generate</text>
+    <text x="1082" y="180">plan</text>
+    <text x="1082" y="230">act</text>
+  </g>
+
+  <text x="846" y="284" font-family="Consolas,Menlo,monospace" font-size="13" fill="#5E8CB5" letter-spacing="1">DiT / GRPO / MoE / EP</text>
 </svg>
