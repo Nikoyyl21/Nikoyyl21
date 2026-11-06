@@ -20,7 +20,7 @@
 
 **想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
-[方向](#scope) · [怎么读报告](#method) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
+[方向](#scope) · [自我介绍](#intro) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
 
 </div>
 
@@ -66,17 +66,13 @@
   - 业务落地：离线指标落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集
   - 指标失真：judge 自偏好、benchmark 污染、评测集与真实分布偏移；榜单涨分不等于线上收益，离线代理指标怎么对齐真实业务收益仍是开放问题
 
-<!-- ===== 区块 3：方法论（这段是专业度的主要支撑） ===== -->
+<!-- ===== 区块 3：自我介绍（口语化、亲近，不写客户名与未证实消息） ===== -->
 
-<a name="method"></a>
+<a name="intro"></a>
 
-## 怎么读一份技术报告
+## 自我介绍
 
-1. 按方法族归档，不按产品名归档。同一条路线在不同实现里的差异，比发布顺序更有信息量。
-2. 关键结论做多源交叉核验，OpenReview、arXiv、DBLP、机构主页和开源实现互相印证；同名歧义保留候选，不强行合并。
-3. 每条判断标注来源与置信度。查不到就写查不到，不补推测，不把推断伪装成事实。
-
-置顶仓库是这套方法的产出：技术图谱、作者索引、方向时间线，全部基于公开资料。
+我平时最在意的，是那些还没写进公告的变化：一条方法族突然被加注、某家团队悄悄调了组织与投入、技术报告里署名顺序的微调，往往比榜单涨分更早说明方向往哪走。各家最近在聊什么、哪些动向有公开资料能互相印证、哪些只是噪声，我会先自己交叉核验一遍；能讲的讲清楚，没把握的就说没把握，传言到我这儿为止。这一年也陆续陪不少同学做过咨询：有人想确认手上的问题还值不值得继续投入，有人在两三条路线之间权衡，也有人最后什么都没换，只是把整张行业地图看清楚了。我挺喜欢这种没有结论、聊完却踏实一点的对话。所以你哪怕暂时完全不看机会，也欢迎加个微信，就当多一个能聊行业、也守得住分寸的朋友；等哪天真的想动了，我们再聊也不迟。
 
 <!-- ===== 区块 4：我在找谁（改这里，可复用分人群话术） ===== -->
 
@@ -171,7 +167,7 @@ I track how foundation model and multimodal methods actually evolve, using publi
 
 **What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, evaluation practice (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
 
-**How I read a report** — archive by method family rather than product name, cross-check claims against OpenReview, arXiv, DBLP and institutional pages, keep ambiguous author candidates separate, and label every conclusion with a source and a confidence level.
+**A bit about me** — I tend to notice the changes that never make it into an announcement: a method family suddenly getting more investment, a quiet shift in how a team is organized, a small change in the author order of a technical report. Those signals often move earlier than leaderboard scores. I cross-check what can be verified against public sources, say plainly when something is still unconfirmed, and let rumors stop with me. Over the past year I have also helped many researchers think things through: some weighing whether a problem is still worth their time, some comparing two or three routes, some simply leaving with a clearer map of the field and no decision at all. Those are the conversations I enjoy most. Even if you are not looking at any opportunity right now, adding me on WeChat just to talk shop is more than welcome.
 
 **The only ask** — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
