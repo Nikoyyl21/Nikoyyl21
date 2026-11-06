@@ -1,7 +1,7 @@
 <!-- ==========================================================
      已上线版本。每个可编辑区块都用注释标了出来。
      全局规则：不出现中文姓名、不出现未授权客户名、不出现候选人信息。
-     术语原则：写方法族、真实取舍和开放问题，不堆关键词。
+     语言口径：中文短句，术语只做标签，正文写具体场景和「我会问什么」。
      改稿清单见 EDIT-ME.md
      ========================================================== -->
 
@@ -14,13 +14,13 @@
 
 **完整介绍页 → [nikoyyl21.github.io](https://nikoyyl21.github.io/)**　点开即读，无需登录
 
-**我在帮做基模和多模态的研究员，判断下一个值得投入的问题**
+**做大模型方向的猎头，主要看基模与多模态**
 
 `foundation models`　`post-training`　`multimodal generation`　`systems`
 
 **想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
-[方向](#scope) · [自我介绍](#intro) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
+[方向](#scope) · [自我介绍](#intro) · [可以和谁聊](#who) · [怎么联系](#contact) · [English](#english)
 
 </div>
 
@@ -38,33 +38,37 @@
 
 ## 我在做什么
 
-以公开技术报告、论文和开源实现为一手材料，跟踪基模与多模态方向的方法演进和组织分工，还原一条路线真正在解什么问题。
+做大模型方向的猎头，主要看基模与多模态。平时读公开的技术报告和论文，也留意团队在方向和分工上的变化。
 
-聊的是方法取舍、数据配比和算力约束，不是岗位清单。
+聊的时候从你做过的具体问题开始：贡献在哪一段、还想继续解什么，不先甩岗位清单。
 
-<!-- ===== 区块 2：方向（改这里，术语可替换） ===== -->
+<!-- ===== 区块 2：方向（改这里，术语只做标签） ===== -->
 
 <a name="scope"></a>
 
 ## 方向
 
 - **文本基座 / 后训练**（重点）
-  - 预训练与架构：MoE 专家路由与稀疏激活、数据配比与 mid-training 退火、RoPE 外推与 KV cache 成本
-  - 后训练与对齐：DPO / PPO / GRPO 一族、RLVR 与可验证奖励、process reward model、扩散语言模型上的 RL 对齐（dLLM / EBPO）
-  - 真实代价：reward hacking、KL 约束的取舍、scaling law 之外的数据墙；后训练收益有多少来自基座能力本身，仍是开放问题
+  - 预训练：数据怎么配、MoE 路由是不是真省、长上下文的成本怎么算
+  - 后训练：DPO / GRPO 这类方法怎么选、奖励信号怎么验、对齐之后能力有没有掉
+  - 容易忽略的：奖励被刷、对齐后通用能力掉了多少、数据还能撑多久
+  - 我常问的：这次涨分主要来自基座，还是后训练？换个任务还成立吗
 - **多模态 / 视频与图像生成**（重点）
-  - 预训练数据：视频与图像语料的清洗去重、质量过滤与配比，时空一致性与运动标注、图文对齐；数据配比基本决定可控性上限
-  - 生成结构：DiT 与 flow matching、时空 VAE 压缩比、长时序建模与分辨率外推，图像侧的控制分支与条件注入
-  - 参考与编辑生成：reference-based 生成与主体 / ID 一致性、指令式编辑与局部重绘、Flow-GRPO / VideoReward 一类奖励优化；可控性仍缺可靠的自动评测代理
-  - 语音并入同一共享表征下的另一路模态，顺带覆盖，不单独展开
+  - 数据：视频和图像语料怎么清洗、怎么配比，基本决定生成能不能控得住
+  - 生成结构：DiT / flow matching 这类框架、长视频的时序一致性、图像侧怎么加控制条件
+  - 参考与编辑：主体一致性、按指令改图改视频、用奖励模型继续优化效果
+  - 语音顺带覆盖，不单独展开
+  - 我常问的：效果最后靠什么评？自动分数和真人看的结果差多少
 - **Infra / 推理系统**
-  - 训练侧：TP / PP / EP 并行策略、MFU、训练稳定性
-  - 推理侧：prefill-decode 分离、KV cache 与量化、SLO 下的单位 token 成本
-  - 效率取舍：集群利用率与弹性调度、量化带来的精度损失
+  - 训练：并行怎么切、集群利用率、训练稳不稳
+  - 推理：prefill-decode 分离、KV cache、单个 token 的成本
+  - 容易忽略的：量化之后精度掉了多少、调度一挤就变慢
+  - 我常问的：服务什么模型、并发多少、优化前的基线是什么
 - **大模型评测**（横切维度，单独列出）
-  - 评测口径：pass@k 与 RLVR 可验证奖励、人类偏好与 LLM-as-a-judge / pairwise arena、VBench 与时序一致性；按业务场景拆，不套通用榜单
-  - 业务落地：离线指标落到灰度 A/B、时延与单位成本、安全合规和人工抽检的回归集
-  - 指标失真：judge 自偏好、benchmark 污染、评测集与真实分布偏移；榜单涨分不等于线上收益，离线代理指标怎么对齐真实业务收益仍是开放问题
+  - 用什么口径：能验答案的任务看通过率，开放生成看人怎么评，视频看时序一致性，别一套榜单套所有场景
+  - 怎么落到线上：离线指标、灰度 A/B、时延和成本、人工抽检的回归集
+  - 容易失真的地方：judge 偏爱自己的答案、评测集被污染、榜单涨分不等于线上有用
+  - 我常问的：这个分数涨了，最后对业务到底有没有用
 
 <!-- ===== 区块 3：自我介绍（口语化、亲近，不写客户名与未证实消息） ===== -->
 
@@ -72,57 +76,57 @@
 
 ## 自我介绍
 
-我平时最在意的，是那些还没写进公告的变化：一条方法族突然被加注、某家团队悄悄调了组织与投入、技术报告里署名顺序的微调，往往比榜单涨分更早说明方向往哪走。各家最近在聊什么、哪些动向有公开资料能互相印证、哪些只是噪声，我会先自己交叉核验一遍；能讲的讲清楚，没把握的就说没把握，传言到我这儿为止。这一年也陆续陪不少同学做过咨询：有人想确认手上的问题还值不值得继续投入，有人在两三条路线之间权衡，也有人最后什么都没换，只是把整张行业地图看清楚了。我挺喜欢这种没有结论、聊完却踏实一点的对话。所以你哪怕暂时完全不看机会，也欢迎加个微信，就当多一个能聊行业、也守得住分寸的朋友；等哪天真的想动了，我们再聊也不迟。
+我平时比较留意行业里那些还没写进公告的变化：哪家团队最近在换方向、哪条线悄悄加了人、一篇技术报告里谁排在前面。这些小信号，常常比榜单分数更早说明点什么。各家最近在聊的事，我会先用公开资料核一遍，能讲清楚的讲清楚，没把握的就说没把握，不拿来当结论。这一年也陆续陪不少同学聊过：有人想确认手上的问题还值不值得继续做，有人在两三条路线之间犹豫，也有人最后什么都没换，只是把行业地图看清楚了。我挺喜欢这种没有结论、聊完却踏实一点的对话。所以哪怕你暂时完全不看机会，也欢迎加个微信，就当多一个能聊行业、也守得住分寸的朋友；等哪天想动了，我们再聊也不迟。
 
-<!-- ===== 区块 4：我在找谁（改这里，可复用分人群话术） ===== -->
+<!-- ===== 区块 4：可以和谁聊（改这里，可复用分人群话术） ===== -->
 
 <a name="who"></a>
 
-## 我在找谁
+## 可以和谁聊
 
 <details>
-<summary><b>研究员</b>　想判断方向，或比较不同实现的路线差异</summary>
+<summary><b>研究员</b>　想看看方向，或比较不同团队的做法</summary>
 
 <br>
 
-从你在做的具体问题聊起，基模能力边界、奖励信号设计，或者一个方法在更大规模上还成不成立。可以直接问我某条路线走到哪一步、瓶颈在哪。
+先聊你正在解的问题、负责的是哪一段，再聊下一个问题值不值得继续投入。
 
 </details>
 
 <details>
-<summary><b>Infra 与系统</b>　关心 MFU、并行策略和推理成本</summary>
+<summary><b>Infra 与系统</b>　关心训练效率和推理成本</summary>
 
 <br>
 
-TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑和 SLO 的实际约束，都能摊开讲，包括不那么好看的部分。
+我会问得具体些：多大的集群、服务什么模型、并发和延迟目标是什么、瓶颈卡在哪。
 
 </details>
 
 <details>
-<summary><b>多模态与生成</b>　视频、图像生成方向</summary>
+<summary><b>多模态与生成</b>　做视频、图像生成的</summary>
 
 <br>
 
-数据配比、时空压缩比、奖励模型怎么建、评测靠 VBench 还是人类偏好对齐，这些比岗位清单更值得先聊清楚。
+数据怎么配、生成结果怎么控、效果怎么评，这些比岗位清单更值得先聊清楚。
 
 </details>
 
 <details>
-<summary><b>暂时不想动的人</b>　只想先了解发生了什么</summary>
+<summary><b>暂时不想动的人</b>　只想先了解行业在发生什么</summary>
 
 <br>
 
-不做任何决定也没关系，这类聊天我同样欢迎。
+不做任何决定也没关系。先匿名聊点近况，也行。
 
 </details>
 
 <!-- ===== 区块 5：可信度（有公开文章就把链接加在这段） ===== -->
 
-## 为什么可以跟我聊
+## 聊的时候我在意什么
 
-按方法族和算力约束做梳理，不按 JD 关键词做匹配。
+先听你做过什么。从具体问题和你负责的那一段开始，不拿 JD 关键词套人。
 
-能说清一条路线为什么被选中、代价是什么，以及同一技术维度上不同实现的取舍。
+给能用的横向信息：同一个方向上不同团队的做法和差别，包括不那么好看的部分，我会照实说。
 
 不合适会直说，不硬推。
 
@@ -136,14 +140,14 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 | | |
 | :--- | :--- |
 | 电话 | 点开上方「简单聊 15 mins」查看，直接聊 15 分钟 |
-| 微信 | `Hello_le_0502`（添加时备注想聊的方向，不用附简历） |
+| 微信 | `Hello_le_0502`（加的时候备注一句想聊什么就行） |
 | 邮箱 | [18357766985@163.com](mailto:18357766985@163.com)（备选） |
 
-> 一对一沟通，不共享给任何第三方。可以先不透露姓名和现单位，只聊方向。你的信息不会出现在任何公开仓库或公开列表里。
+> 一对一聊，不会共享给任何第三方；可以先不透露姓名和现单位。你的信息也不会出现在任何公开仓库或公开列表里。
 
 <div align="center">
 
-**点开「简单聊 15 mins」，看号码后先匿名聊 15 分钟**
+**点开「简单聊 15 mins」看电话，先聊 15 分钟，不用附简历**
 
 </div>
 
@@ -152,7 +156,7 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 ## 最近在看的
 
 <!-- WEEKLY-NOTE:START -->
-最近更新 2026-11-05　|　最近在看扩散语言模型上的 RL 对齐（dLLM / EBPO），以及视频生成奖励模型在 flow matching 下的可迁移性与 reward hacking。
+最近更新 2026-11-05　|　最近在看两件事：后训练里的奖励信号怎么验，以及视频生成的效果到底该怎么评。
 <!-- WEEKLY-NOTE:END -->
 
 ---
@@ -163,13 +167,13 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 ## English
 
-I track how foundation model and multimodal methods actually evolve, using public technical reports, papers and open-source implementations as primary sources.
+I work as a headhunter in the foundation model space, mostly on foundation models and multimodal generation. I read public technical reports and papers, and pay attention to how teams and their focus shift. When we talk, I start with the problem you have actually worked on, not with a job list.
 
-**What I cover** — foundation models and post-training as one track: MoE routing and sparse activation, data mixture and mid-training annealing, RoPE extrapolation and KV cache economics, then DPO / PPO / GRPO, RLVR and verifiable rewards, process reward models, and RL alignment for diffusion language models. Multimodal generation is the second main track, with video and image at the center: pretraining data curation and mixture, DiT / flow matching and spatial-temporal VAE compression, reference-based generation and instruction-driven editing; speech is only mentioned as another modality under the same shared representation. Also systems (TP / PP / EP parallelism, MFU, prefill-decode disaggregation, unit token cost under SLO) and, as a separate cross-cutting track, LLM evaluation (verifiable rewards, human preference and LLM-as-a-judge, VBench-style metrics, and how offline scores translate into production guardrails).
+**What I follow** — four areas, each with the questions I usually ask. Foundation models and post-training: data mixture, whether MoE routing really saves compute, how rewards are verified, and whether a gain still holds on another task. Multimodal generation, mainly video and image: data curation, DiT / flow matching, consistency over longer clips, reference-based and instruction-driven editing; speech is only mentioned in passing. Systems and inference: parallelism, cluster utilisation, prefill-decode disaggregation, KV cache and unit token cost. LLM evaluation is a separate track: which metric fits which task, how offline scores reach production, and where those scores mislead.
 
-**A bit about me** — I tend to notice the changes that never make it into an announcement: a method family suddenly getting more investment, a quiet shift in how a team is organized, a small change in the author order of a technical report. Those signals often move earlier than leaderboard scores. I cross-check what can be verified against public sources, say plainly when something is still unconfirmed, and let rumors stop with me. Over the past year I have also helped many researchers think things through: some weighing whether a problem is still worth their time, some comparing two or three routes, some simply leaving with a clearer map of the field and no decision at all. Those are the conversations I enjoy most. Even if you are not looking at any opportunity right now, adding me on WeChat just to talk shop is more than welcome.
+**A bit about me** — I tend to notice the small changes that never make it into an announcement: a team switching direction, a line quietly getting more people, a shift in the author order of a technical report. Those signals often move earlier than leaderboard scores. I check what can be verified against public sources and say plainly when something is still unconfirmed. Over the past year I have also helped many researchers think things through: some weighing whether a problem is still worth their time, some comparing two or three routes, some simply leaving with a clearer map of the field and no decision at all. Those are the conversations I enjoy most. Even if you are not looking at any opportunity right now, adding me on WeChat just to talk shop is more than welcome.
 
-**The only ask** — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
+**The only ask** — a 15-minute conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
 **Contact** — open the "15-min chat" panel above to reveal my phone number, or add WeChat `Hello_le_0502`. A short call is enough; no CV, no name, no current employer needed. **Full profile** — https://nikoyyl21.github.io/
 
