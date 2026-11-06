@@ -18,12 +18,20 @@
 
 `foundation models`　`post-training`　`multimodal generation`　`systems`
 
-**想聊就直接发一封邮件：[18357766985@163.com](mailto:18357766985@163.com)**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
+**想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
 [方向](#scope) · [怎么读报告](#method) · [我在找谁](#who) · [怎么联系](#contact) · [English](#english)
 
 </div>
 
+<details>
+<summary><b>简单聊 15 mins · 点开看电话</b></summary>
+
+电话 **18357766985**，直接拨或者存一下都行。
+
+一对一沟通，可以先不透露姓名和现单位，不用附简历。
+
+</details>
 ---
 
 <!-- ===== 区块 1：定位（改这里） ===== -->
@@ -131,15 +139,15 @@ TP / PP / EP 怎么切、prefill-decode 分离是不是真落地、集群拓扑�
 
 | | |
 | :--- | :--- |
-| 邮箱 | [18357766985@163.com](mailto:18357766985@163.com) |
+| 电话 | 点开上方「简单聊 15 mins」查看，直接聊 15 分钟 |
 | 微信 | `Hello_le_0502`（添加时备注想聊的方向，不用附简历） |
-| 15 分钟 | 邮件或微信约时间都可以，标题写想聊的方向就行 |
+| 邮箱 | [18357766985@163.com](mailto:18357766985@163.com)（备选） |
 
 > 一对一沟通，不共享给任何第三方。可以先不透露姓名和现单位，只聊方向。你的信息不会出现在任何公开仓库或公开列表里。
 
 <div align="center">
 
-**发一封邮件，先匿名聊 15 分钟**
+**点开「简单聊 15 mins」，看号码后先匿名聊 15 分钟**
 
 </div>
 
@@ -167,7 +175,7 @@ I track how foundation model and multimodal methods actually evolve, using publi
 
 **The only ask** — a 15-minute anonymous conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
-**Contact** — [18357766985@163.com](mailto:18357766985@163.com) or WeChat `Hello_le_0502`. A short message is enough; no CV, no name, no current employer needed. **Full profile** — https://nikoyyl21.github.io/
+**Contact** — open the "15-min chat" panel above to reveal my phone number, or add WeChat `Hello_le_0502`. A short call is enough; no CV, no name, no current employer needed. **Full profile** — https://nikoyyl21.github.io/
 
 ---
 
