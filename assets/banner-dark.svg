@@ -1,103 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Petry, foundation models, multimodal inputs converging into a shared latent space">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Petry, a friendly page about foundation models, video generation and teams">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0C1E33"/>
-      <stop offset="1" stop-color="#123551"/>
+      <stop offset="0" stop-color="#0A1D15"/>
+      <stop offset="1" stop-color="#123524"/>
     </linearGradient>
     <radialGradient id="glow">
-      <stop offset="0" stop-color="#2A5B8C" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#2A5B8C" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2F7F52" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2F7F52" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
   <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="1199" height="299" rx="16" fill="none" stroke="#28527A" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="16" fill="none" stroke="#245238" stroke-width="1"/>
 
-  <g stroke="#1D4063" stroke-width="1" opacity="0.5">
+  <g stroke="#1B422C" stroke-width="1" opacity="0.6">
     <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
     <path d="M60 0 V300 M180 0 V300 M300 0 V300 M420 0 V300 M540 0 V300 M660 0 V300 M780 0 V300 M900 0 V300 M1020 0 V300 M1140 0 V300"/>
   </g>
-  <g stroke="#2C5A86" fill="none" stroke-width="1.2" opacity="0.5">
+  <g stroke="#2E7049" fill="none" stroke-width="1.4" opacity="0.6">
     <path d="M700 226 C820 186 920 246 1040 196 S1170 146 1200 126"/>
     <path d="M700 250 C820 210 920 270 1040 220 S1170 170 1200 150"/>
     <path d="M700 274 C820 234 920 294 1050 244 S1170 196 1200 176"/>
   </g>
   <circle cx="930" cy="150" r="215" fill="url(#glow)"/>
 
-  <text x="64" y="112" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E8F2FF" letter-spacing="-1">Petry</text>
-  <text x="66" y="152" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#9FC4EA">foundation models / post-training / multimodal / infra</text>
-  <rect x="66" y="178" width="56" height="3" rx="1.5" fill="#58A6FF"/>
-  <text x="66" y="212" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7FA9D0">method families, compute constraints, honest trade-offs</text>
-  <text x="66" y="242" font-family="Consolas,Menlo,monospace" font-size="12" fill="#5E8CB5" letter-spacing="1">AGI / shared latent space / capability transfer</text>
+  <text x="64" y="112" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E9F7EE" letter-spacing="-1">Petry</text>
+  <text x="66" y="152" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#A2D6B7">models / video / teams / what's next</text>
+  <rect x="66" y="178" width="56" height="4" rx="2" fill="#6FD79C"/>
+  <text x="66" y="212" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8FCBA6">start with what you are working on</text>
+  <text x="66" y="242" font-family="Consolas,Menlo,monospace" font-size="12" fill="#73AC8B" letter-spacing="0.8">no CV needed / a 15-min chat is enough</text>
 
-  <text x="746" y="44" font-family="Consolas,Menlo,monospace" font-size="11" fill="#6E9AC6" letter-spacing="1">MODALITIES -&gt; SHARED LATENT -&gt; CAPABILITIES</text>
+  <text x="746" y="44" font-family="Consolas,Menlo,monospace" font-size="11" fill="#73AC8B" letter-spacing="1">TEXT / IMAGE / VIDEO -&gt; ONE MODEL -&gt; USEFUL WORK</text>
 
-  <g stroke="#79B6EE" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.85">
+  <g stroke="#8FE6B4" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.85">
     <path d="M752 68 H788 M752 76 H788 M752 84 H776"/>
     <rect x="752" y="110" width="36" height="30" rx="4"/>
     <path d="M754 136 L764 126 L772 132 L786 118"/>
-    <circle cx="761" cy="119" r="2.5" fill="#79B6EE" stroke="none"/>
+    <circle cx="761" cy="119" r="2.5" fill="#8FE6B4" stroke="none"/>
     <path d="M754 170 V178 M762 164 V184 M770 160 V188 M778 165 V183 M786 169 V179"/>
     <rect x="752" y="206" width="36" height="30" rx="4"/>
-    <path d="M766 214 L766 228 L778 221 Z" fill="#79B6EE" stroke="none"/>
+    <path d="M766 214 L766 228 L778 221 Z" fill="#8FE6B4" stroke="none"/>
   </g>
 
-  <g stroke="#3E79AE" stroke-width="1.4" fill="none" opacity="0.7">
+  <g stroke="#3E8A5D" stroke-width="1.4" fill="none" opacity="0.8">
     <path d="M792 78 C830 78 842 120 876 138"/>
     <path d="M792 126 C830 126 846 140 876 147"/>
     <path d="M792 174 C830 174 846 160 876 153"/>
     <path d="M792 222 C830 222 842 180 876 162"/>
   </g>
 
-  <circle cx="930" cy="150" r="52" fill="none" stroke="#3E79AE" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.8"/>
-  <circle cx="930" cy="150" r="34" fill="#122A44" fill-opacity="0.7" stroke="#58A6FF" stroke-width="1.6"/>
-  <g fill="#3E6EA1" opacity="0.7">
-    <circle cx="916" cy="136" r="2.2"/>
-    <circle cx="926" cy="136" r="2.2"/>
-    <circle cx="946" cy="136" r="2.2"/>
-    <circle cx="926" cy="146" r="2.2"/>
-    <circle cx="936" cy="146" r="2.2"/>
-    <circle cx="946" cy="146" r="2.2"/>
-    <circle cx="916" cy="156" r="2.2"/>
-    <circle cx="936" cy="156" r="2.2"/>
-    <circle cx="946" cy="156" r="2.2"/>
-    <circle cx="916" cy="166" r="2.2"/>
-    <circle cx="926" cy="166" r="2.2"/>
-    <circle cx="936" cy="166" r="2.2"/>
+  <circle cx="930" cy="150" r="52" fill="none" stroke="#3E8A5D" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.9"/>
+  <circle cx="930" cy="150" r="34" fill="#123524" fill-opacity="0.8" stroke="#6FD79C" stroke-width="1.6"/>
+  <g fill="#3E8A5D" opacity="0.9">
+    <circle cx="916" cy="136" r="2.2"/><circle cx="926" cy="136" r="2.2"/><circle cx="946" cy="136" r="2.2"/>
+    <circle cx="926" cy="146" r="2.2"/><circle cx="936" cy="146" r="2.2"/><circle cx="946" cy="146" r="2.2"/>
+    <circle cx="916" cy="156" r="2.2"/><circle cx="936" cy="156" r="2.2"/><circle cx="946" cy="156" r="2.2"/>
+    <circle cx="916" cy="166" r="2.2"/><circle cx="926" cy="166" r="2.2"/><circle cx="936" cy="166" r="2.2"/>
   </g>
-  <g fill="#58A6FF">
-    <circle cx="936" cy="136" r="2.8"/>
-    <circle cx="916" cy="146" r="2.8"/>
-    <circle cx="926" cy="156" r="2.8"/>
-    <circle cx="946" cy="166" r="2.8"/>
-  </g>
-  <g fill="#6E9AC6" opacity="0.6">
-    <circle cx="930" cy="98" r="2"/>
-    <circle cx="982" cy="150" r="2"/>
-    <circle cx="930" cy="202" r="2"/>
-    <circle cx="878" cy="150" r="2"/>
+  <g fill="#6FD79C">
+    <circle cx="936" cy="136" r="2.8"/><circle cx="916" cy="146" r="2.8"/>
+    <circle cx="926" cy="156" r="2.8"/><circle cx="946" cy="166" r="2.8"/>
   </g>
 
-  <g stroke="#3E79AE" stroke-width="1.4" fill="none" opacity="0.7">
+  <g stroke="#3E8A5D" stroke-width="1.4" fill="none" opacity="0.8">
     <path d="M984 140 C1020 108 1040 78 1068 76"/>
     <path d="M984 147 C1020 132 1040 126 1068 126"/>
     <path d="M984 153 C1020 168 1040 176 1068 176"/>
     <path d="M984 160 C1020 200 1040 224 1068 226"/>
   </g>
-  <g fill="#58A6FF">
-    <circle cx="1070" cy="76" r="4.5"/>
-    <circle cx="1070" cy="176" r="4.5"/>
+  <g fill="#6FD79C">
+    <circle cx="1070" cy="76" r="4.5"/><circle cx="1070" cy="176" r="4.5"/>
   </g>
-  <g fill="#6E9AC6" opacity="0.7">
-    <circle cx="1070" cy="126" r="4"/>
-    <circle cx="1070" cy="226" r="4"/>
+  <g fill="#3E8A5D">
+    <circle cx="1070" cy="126" r="4"/><circle cx="1070" cy="226" r="4"/>
   </g>
-  <g font-family="Consolas,Menlo,monospace" font-size="10" fill="#79A8D4" letter-spacing="0.5">
+  <g font-family="Consolas,Menlo,monospace" font-size="10" fill="#8FCBA6" letter-spacing="0.5">
     <text x="1082" y="80">reason</text>
     <text x="1082" y="130">generate</text>
     <text x="1082" y="180">plan</text>
     <text x="1082" y="230">act</text>
   </g>
 
-  <text x="846" y="284" font-family="Consolas,Menlo,monospace" font-size="13" fill="#5E8CB5" letter-spacing="1">DiT / GRPO / MoE / EP</text>
+  <text x="846" y="284" font-family="Consolas,Menlo,monospace" font-size="13" fill="#73AC8B" letter-spacing="1">LET'S TALK / 15 MIN</text>
+
+  <!-- 手绘涂鸦：小太阳、小芽、星星 -->
+  <g transform="translate(670 34) scale(0.42)" stroke="#E9A12E" stroke-width="5" stroke-linecap="round">
+    <path d="M50 5 L50 15 M50 85 L50 95 M5 50 L15 50 M85 50 L95 50 M18 18 L25 25 M75 75 L82 82 M82 18 L75 25 M25 75 L18 82"/>
+  </g>
+  <circle cx="691" cy="55" r="12" fill="#FFD35C" stroke="#E9A12E" stroke-width="2.5"/>
+  <g fill="#9A5F22"><circle cx="687" cy="53" r="1.6"/><circle cx="695" cy="53" r="1.6"/></g>
+  <path d="M687 59 Q691 62 695 59" fill="none" stroke="#9A5F22" stroke-width="1.6" stroke-linecap="round"/>
+
+  <g transform="translate(600 246) scale(0.34)">
+    <path d="M50 79 C50 62 48 50 46 38" fill="none" stroke="#6FD79C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M47 53 C29 51 23 39 26 28 C40 28 49 39 47 53 Z" fill="#3E8A5D" stroke="#6FD79C" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M50 46 C66 44 74 32 72 22 C58 24 50 34 50 46 Z" fill="#2E7049" stroke="#6FD79C" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M23 81 C38 75 62 75 77 81" fill="none" stroke="#C99B5C" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1138 258) scale(0.22)">
+    <path d="M50 9 L61 37 L91 39 L68 58 L76 88 L50 71 L24 88 L32 58 L9 39 L39 37 Z" fill="#FFD35C" stroke="#E9A12E" stroke-width="5" stroke-linejoin="round"/>
+  </g>
 </svg>

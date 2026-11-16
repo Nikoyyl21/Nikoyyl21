@@ -1,23 +1,24 @@
 <!-- ==========================================================
      已上线版本。每个可编辑区块都用注释标了出来。
      全局规则：不出现中文姓名、不出现候选人信息、不写未公开的岗位与 HC 细节。
-     团队信息只写公开可查的方向和常驻城市，不写成合作客户名单或实时在招 JD。
-     语言口径：中文短句，术语只做标签，正文写具体场景和「我会问什么」。
+     团队信息只写公开可查的方向和常驻城市，不写成合作客户名单或实时招聘清单。
+     视觉口径：浅绿主题 + 原创蜡笔涂鸦贴纸（手绘 SVG，不使用任何现成卡通角色）。
+     语言口径：中文短句，正文尽量白话，术语能不写就不写，必要时只作标签。
      改稿清单见 EDIT-ME.md
      ========================================================== -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Petry, multimodal inputs converging into a shared latent space" width="100%">
+  <img src="assets/banner-light.svg" alt="Petry, a light-green banner with hand-drawn sun and sprout doodles" width="100%">
 </picture>
 
 <div align="center">
 
 **完整介绍页 → [nikoyyl21.github.io](https://nikoyyl21.github.io/)**　点开即读，无需登录
 
-**做大模型方向的猎头，主要看基模与多模态**
+**做大模型方向的猎头，主要看基础模型与多模态**
 
-`foundation models`　`post-training`　`multimodal generation`　`systems`
+`模型怎么练`　`视频怎么生成`　`成本怎么算`　`效果怎么评`
 
 **想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
@@ -39,36 +40,36 @@
 
 ## 我在做什么
 
-做大模型方向的猎头，主要看基模与多模态。平时读公开的技术报告和论文，也留意团队在方向和分工上的变化。
+做大模型方向的猎头，主要看基础模型与多模态。平时读公开的技术报告和论文，也留意团队在方向和分工上的变化。
 
 聊的时候从你做过的具体问题开始：贡献在哪一段、还想继续解什么，不先甩岗位清单。
 
-<!-- ===== 区块 2：方向（改这里，术语只做标签） ===== -->
+<!-- ===== 区块 2：方向（改这里，正文写白话） ===== -->
 
 <a name="scope"></a>
 
 ## 方向
 
-- **文本基座 / 后训练**（重点）
-  - 预训练：数据怎么配、MoE 路由是不是真省、长上下文的成本怎么算
-  - 后训练：DPO / GRPO 这类方法怎么选、奖励信号怎么验、对齐之后能力有没有掉
-  - 容易忽略的：奖励被刷、对齐后通用能力掉了多少、数据还能撑多久
-  - 我常问的：这次涨分主要来自基座，还是后训练？换个任务还成立吗
-- **多模态 / 视频与图像生成**（重点）
-  - 数据：视频和图像语料怎么清洗、怎么配比，基本决定生成能不能控得住
-  - 生成结构：DiT / flow matching 这类框架、长视频的时序一致性、图像侧怎么加控制条件
-  - 参考与编辑：主体一致性、按指令改图改视频、用奖励模型继续优化效果
+- **文本大模型与调优**（重点）
+  - 先练底子：训练数据怎么配、模型太大怎么拆开跑、一次能读多长的内容
+  - 再调答案：按人的偏好把回答调顺、打分标准靠不靠谱、调完别的题会不会变差
+  - 容易忽略的：分数被刷上去但其实没学会、调完反而变笨、好数据快用完了
+  - 我常问的：这次涨分主要来自底子，还是后面调的？换个任务还成立吗
+- **视频与图像生成**（重点）
+  - 数据：视频和图片素材怎么挑、怎么洗、比例怎么配，先决定了生成能不能控得住
+  - 怎么生成：画面是一步步从噪声里"描"出来的，骨架怎么搭、长视频前后会不会跳、改图时怎么加条件
+  - 照着参考改：给一张参考图，人物前后长得一不一样；一句话能不能改对地方；再用打分模型把效果往上推
   - 语音顺带覆盖，不单独展开
   - 我常问的：效果最后靠什么评？自动分数和真人看的结果差多少
-- **Infra / 推理系统**
-  - 训练：并行怎么切、集群利用率、训练稳不稳
-  - 推理：prefill-decode 分离、KV cache、单个 token 的成本
-  - 容易忽略的：量化之后精度掉了多少、调度一挤就变慢
-  - 我常问的：服务什么模型、并发多少、优化前的基线是什么
+- **训练和推理的工程**
+  - 训练：一堆机器怎么分工、机器有没有闲着、跑起来稳不稳
+  - 推理：先读懂问题、再一个字一个字往外吐，这两段分开算；算过的存起来少算一遍；生成一千字要花多少钱
+  - 容易忽略的：把模型压小省显存，准确率掉多少；机器一挤就变慢
+  - 我常问的：服务什么模型、同时来多少请求、改之前是什么水平
 - **大模型评测**（横切维度，单独列出）
-  - 用什么口径：能验答案的任务看通过率，开放生成看人怎么评，视频看时序一致性，别一套榜单套所有场景
-  - 怎么落到线上：离线指标、灰度 A/B、时延和成本、人工抽检的回归集
-  - 容易失真的地方：judge 偏爱自己的答案、评测集被污染、榜单涨分不等于线上有用
+  - 用什么口径：有标准答案的题看答对多少，开放题看人怎么打分，视频看画面连不连贯；别一套榜单套所有场景
+  - 怎么落到线上：离线跑出来的分数，先放给一小部分用户试，再看速度和成本；另外留一组题定期人工复看
+  - 容易失真的地方：让模型当裁判，它偏爱自己那类答案；评测题可能早被练过；榜单涨分不等于线上真有用
   - 我常问的：这个分数涨了，最后对业务到底有没有用
 
 <!-- ===== 区块 3：自我介绍（口语化、亲近，不写客户名与未证实消息） ===== -->
@@ -95,20 +96,20 @@
 </details>
 
 <details>
-<summary><b>Infra 与系统</b>　关心训练效率和推理成本</summary>
+<summary><b>训练与推理</b>　关心训练效率和推理成本</summary>
 
 <br>
 
-我会问得具体些：多大的集群、服务什么模型、并发和延迟目标是什么、瓶颈卡在哪。
+我会问得具体些：多大的集群、跑什么模型、同时来多少请求、多快要有结果、卡在哪。
 
 </details>
 
 <details>
-<summary><b>多模态与生成</b>　做视频、图像生成的</summary>
+<summary><b>视频与图像</b>　做视频、图像生成的</summary>
 
 <br>
 
-数据怎么配、生成结果怎么控、效果怎么评，这些比岗位清单更值得先聊清楚。
+素材怎么配、生成结果怎么控、效果怎么评，这些比岗位清单更值得先聊清楚。
 
 </details>
 
@@ -121,7 +122,7 @@
 
 </details>
 
-<!-- ===== 区块 5：常聊的一线团队（公开资料整理，不写在招 JD） ===== -->
+<!-- ===== 区块 5：常聊的一线团队（公开资料整理，不写实时招聘清单） ===== -->
 
 <a name="teams"></a>
 
@@ -129,24 +130,24 @@
 
 按公司归类，写到具体团队、在做的方向和办公地点。完整版在[介绍页](https://nikoyyl21.github.io/#teams)，可以按城市筛选。
 
-- **阿里 · 千问 / 通义**（杭州 / 北京）：基础模型预训练与后训练、Qwen-VL 多模态、Agent 与 Code 方向
-- **腾讯 · 混元**（深圳 / 北京）：视频与图像生成、基模后训练对齐、训练与推理系统
-- **字节 · Seed**（北京 / 上海 / 杭州）：基座预训练、Agentic 与 Code 后训练、数据全链路
-- **智谱 · GLM**（北京）：GLM 基座、多模态与 Agent、CodeGeeX 代码方向
-- **快手 · 可灵 / Keye / KAT**（北京）：视频生成、多模态理解、文本基座
-- **美团 · LongCat**（北京）：LLM 预训练与基模、dLLM 与 RL 对齐
-- **阶跃星辰 · Step**（上海 / 北京）：文本基座 MoE、多模态生成、训练与推理系统
-- **蚂蚁集团 · 百灵**（杭州 / 北京 / 上海）：垂域后训练、Agent / dLLM 后训练
-- **百度 · 文心**（北京）：基模与多模态、图像算法
-- **MiniMax**（上海）：基座全链路、长上下文与推理效率
+- **阿里 · 千问 / 通义**（杭州 / 北京）：基础模型训练与调优、Qwen-VL 看图答题、智能体与代码方向
+- **腾讯 · 混元**（深圳 / 北京）：视频与图像生成、基础模型调优对齐、训练与推理工程
+- **字节 · Seed**（北京 / 上海 / 杭州）：基础模型预训练、智能体与代码调优、数据全链路
+- **智谱 · GLM**（北京）：GLM 基础模型、多模态与智能体、CodeGeeX 代码方向
+- **快手 · 可灵 / Keye / KAT**（北京）：视频生成、看懂视频、文本大模型
+- **美团 · LongCat**（北京）：大模型预训练与基础模型、文字生成模型调优
+- **阶跃星辰 · Step**（上海 / 北京）：文本大模型、多模态生成、训练与推理工程
+- **蚂蚁集团 · 百灵**（杭州 / 北京 / 上海）：行业场景调优、智能体与文字生成调优
+- **百度 · 文心**（北京）：基础模型与多模态、图像算法
+- **MiniMax**（上海）：基础模型全链路、长内容与推理效率
 
-> 按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时在招 JD。具体岗位、层级、HC 和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。
+> 按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时招聘清单。具体岗位、层级、招几个人和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。
 
 <!-- ===== 区块 6：可信度（有公开文章就把链接加在这段） ===== -->
 
 ## 聊的时候我在意什么
 
-先听你做过什么。从具体问题和你负责的那一段开始，不拿 JD 关键词套人。
+先听你做过什么。从具体问题和你负责的那一段开始，不拿岗位清单里的关键词套人。
 
 给能用的横向信息：同一个方向上不同团队的做法和差别，包括不那么好看的部分，我会照实说。
 
@@ -178,7 +179,7 @@
 ## 最近在看的
 
 <!-- WEEKLY-NOTE:START -->
-最近更新 2026-11-05　|　最近在看两件事：后训练里的奖励信号怎么验，以及视频生成的效果到底该怎么评。
+最近更新 2026-11-05　|　最近在看两件事：给回答打分的标准怎么验，以及视频生成的效果到底该怎么评。
 <!-- WEEKLY-NOTE:END -->
 
 ---
@@ -191,7 +192,7 @@
 
 I work as a headhunter in the foundation model space, mostly on foundation models and multimodal generation. I read public technical reports and papers, and pay attention to how teams and their focus shift. When we talk, I start with the problem you have actually worked on, not with a job list.
 
-**What I follow** — four areas, each with the questions I usually ask. Foundation models and post-training: data mixture, whether MoE routing really saves compute, how rewards are verified, and whether a gain still holds on another task. Multimodal generation, mainly video and image: data curation, DiT / flow matching, consistency over longer clips, reference-based and instruction-driven editing; speech is only mentioned in passing. Systems and inference: parallelism, cluster utilisation, prefill-decode disaggregation, KV cache and unit token cost. LLM evaluation is a separate track: which metric fits which task, how offline scores reach production, and where those scores mislead.
+**What I follow** — four areas, each with the questions I usually ask. Text models and tuning: how training data is mixed, how a very large model is split across machines, how long an input it can read, whether the scoring standard holds up, and whether a gain survives on another task. Video and image generation: how clips and images are picked and cleaned, how a picture is built up step by step from noise, whether longer clips stay consistent, and how reference images and one-line edits are handled; speech is only mentioned in passing. Training and serving: how machines share the work, whether they sit idle, splitting "read the question" from "write the answer", reusing what has already been computed, and what a thousand words cost. Evaluation is a separate track: which score fits which task, how an offline score reaches real users, and where those scores mislead.
 
 **Teams I talk about** — a public-source map of first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu and MiniMax. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
 
@@ -205,7 +206,7 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/agi-strip-dark.svg">
-  <img src="assets/agi-strip-light.svg" alt="Motif: sparse activation flowing into shared representations" width="100%">
+  <img src="assets/agi-strip-light.svg" alt="A light-green hand-drawn strip with a small star doodle" width="100%">
 </picture>
 
 <div align="center">

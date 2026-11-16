@@ -6,55 +6,59 @@
 <title>GitHub 主页效果预览</title>
 <style>
   :root { color-scheme: light dark; }
-  body { margin: 0; padding: 32px 16px 64px; background: #eaf3ff; color: #123a5e;
+  body { margin: 0; padding: 32px 16px 64px; background: #e2f4e5; color: #1c4a34;
          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Helvetica, Arial, sans-serif;
          font-size: 16px; line-height: 1.65; }
   .wrap { max-width: 900px; margin: 0 auto; }
-  .note { max-width: 900px; margin: 0 auto 24px; padding: 10px 14px; border: 1px solid #bcd8f4;
-          border-radius: 8px; background: #dcecff; font-size: 13px; color: #3d6a97; }
-  .box { border: 1px solid #c6dff7; border-radius: 8px; padding: 32px 40px;
-         background: #ffffff; box-shadow: 0 6px 24px rgba(21,94,168,0.07); }
+  .note { max-width: 900px; margin: 0 auto 24px; padding: 10px 14px; border: 1px solid #b6e0c1;
+          border-radius: 8px; background: #d8f1de; font-size: 13px; color: #3f7c59; }
+  .box { position: relative; border: 1px solid #c9e9d0; border-radius: 8px; padding: 32px 40px;
+         background: #ffffff; box-shadow: 0 6px 24px rgba(31,110,68,0.08); }
+  .box::before { content: ""; position: absolute; top: 10px; right: 14px; width: 46px; height: 46px;
+    background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cg stroke='%23E9A12E' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M30 3v8M30 49v8M3 30h8M49 30h8M11 11l6 6M43 43l6 6M49 11l-6 6M17 43l-6 6'/%3E%3C/g%3E%3Ccircle cx='30' cy='30' r='15' fill='%23FFD35C' stroke='%23E9A12E' stroke-width='2.5'/%3E%3Ccircle cx='25' cy='27' r='2' fill='%238A5A22'/%3E%3Ccircle cx='35' cy='27' r='2' fill='%238A5A22'/%3E%3Cpath d='M25 35q5 4 10 0' fill='none' stroke='%238A5A22' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); }
   img { display: block; max-width: 100%; height: auto; border-radius: 8px; }
   .center { text-align: center; }
-  code { background: #eaf3ff; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
-  a { color: #0969da; text-decoration: none; }
+  code { background: #ecf8ee; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+  a { color: #238353; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h2 { font-size: 22px; font-weight: 600; border-bottom: 1px solid #d6e7f8; padding-bottom: 8px; margin-top: 32px; }
+  h2 { font-size: 22px; font-weight: 600; border-bottom: 1px solid #d0ead7; padding-bottom: 8px; margin-top: 32px; }
+  h2::after { content: ""; display: block; width: 72px; height: 7px; margin-top: 6px;
+    background: no-repeat center / 72px 7px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 9'%3E%3Cpath d='M3 6 C18 1 30 8 46 4.5 S74 1 93 6' fill='none' stroke='%23F5BE45' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"); }
   table { border-collapse: collapse; width: 100%; margin: 16px 0; }
-  th, td { border: 1px solid #d6e7f8; padding: 8px 13px; text-align: left; vertical-align: top; }
-  th { background: #f2f8ff; }
-  details { border: 1px solid #d6e7f8; border-radius: 8px; padding: 10px 16px; margin: 10px 0; }
+  th, td { border: 1px solid #d0ead7; padding: 8px 13px; text-align: left; vertical-align: top; }
+  th { background: #f3fbf2; }
+  details { border: 1px solid #d0ead7; border-radius: 8px; padding: 10px 16px; margin: 10px 0; }
   summary { cursor: pointer; font-weight: 500; }
-  blockquote { border-left: 4px solid #bcd8f4; color: #557fa8; margin: 16px 0; padding: 0 16px; }
-  hr { border: 0; border-top: 1px solid #d6e7f8; margin: 32px 0; }
-  sub { color: #6e8fae; }
+  blockquote { border-left: 4px solid #b6e0c1; color: #4e8265; margin: 16px 0; padding: 0 16px; }
+  hr { border: 0; border-top: 1px solid #d0ead7; margin: 32px 0; }
+  sub { color: #6f9c7f; }
   ol, ul { padding-left: 24px; }
   ul ul { margin: 4px 0 10px; }
   li { margin: 6px 0; }
   @media (prefers-color-scheme: dark) {
-    body { background: #0a1a2b; color: #e6edf3; }
-    .box { background: #0d2339; border-color: #24486b; box-shadow: none; }
-    .note { background: #102a44; border-color: #24486b; color: #9fc4ea; }
-    th, code { background: #122a44; }
-    blockquote, sub { color: #8b949e; }
-    h2, table, th, td, details { border-color: #24486b; }
-    a { color: #58a6ff; }
+    body { background: #0a1d15; color: #e9f7ee; }
+    .box { background: #0e271c; border-color: #245238; box-shadow: none; }
+    .note { background: #123524; border-color: #245238; color: #a2d6b7; }
+    th, code { background: #123524; }
+    blockquote, sub { color: #a2d6b7; }
+    h2, table, th, td, details { border-color: #245238; }
+    a { color: #6fd79c; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="note">效果预览，内容以 README.md 为准。折叠卡片可以直接点开，横幅在深色模式下会自动换成深蓝版。浅蓝底色来自仓库内的 SVG 横幅；GitHub 页面本身的底色由平台控制，线上只有横幅区域是浅蓝。</div>
+  <div class="note">效果预览，内容以 README.md 为准。折叠卡片可以直接点开，横幅在深色模式下会自动换成深绿版。浅绿底色来自仓库内的 SVG 横幅与手绘涂鸦；GitHub 页面本身的底色由平台控制，线上只有横幅区域是浅绿。</div>
   <div class="box">
 
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-      <img src="assets/banner-light.svg" alt="Petry, multimodal inputs converging into a shared latent space">
+      <img src="assets/banner-light.svg" alt="Petry, a light-green banner with hand-drawn sun and sprout doodles">
     </picture>
 
     <p class="center"><strong>完整介绍页 → <a href="https://nikoyyl21.github.io/">nikoyyl21.github.io</a></strong>　点开即读，无需登录</p>
-    <p class="center"><strong>做大模型方向的猎头，主要看基模与多模态</strong></p>
-    <p class="center"><code>foundation models</code>　<code>post-training</code>　<code>multimodal generation</code>　<code>systems</code></p>
+    <p class="center"><strong>做大模型方向的猎头，主要看基础模型与多模态</strong></p>
+    <p class="center"><code>模型怎么练</code>　<code>视频怎么生成</code>　<code>成本怎么算</code>　<code>效果怎么评</code></p>
     <p class="center"><strong>想聊就点开下面「简单聊 15 mins」看电话</strong>　或加微信 <code>Hello_le_0502</code>　15 分钟，可以先不透露姓名和现单位</p>
     <p class="center"><a href="#scope">方向</a> · <a href="#intro">自我介绍</a> · <a href="#who">可以和谁聊</a> · <a href="#teams">团队地图</a> · <a href="#contact">怎么联系</a> · <a href="#english">English</a></p>
 
@@ -66,41 +70,41 @@
 
     <hr>
     <h2>我在做什么</h2>
-    <p>做大模型方向的猎头，主要看基模与多模态。平时读公开的技术报告和论文，也留意团队在方向和分工上的变化。</p>
+    <p>做大模型方向的猎头，主要看基础模型与多模态。平时读公开的技术报告和论文，也留意团队在方向和分工上的变化。</p>
     <p>聊的时候从你做过的具体问题开始：贡献在哪一段、还想继续解什么，不先甩岗位清单。</p>
 
     <h2 id="scope">方向</h2>
     <ul>
-      <li><strong>文本基座 / 后训练</strong>（重点）
+      <li><strong>文本大模型与调优</strong>（重点）
         <ul>
-          <li>预训练：数据怎么配、MoE 路由是不是真省、长上下文的成本怎么算</li>
-          <li>后训练：DPO / GRPO 这类方法怎么选、奖励信号怎么验、对齐之后能力有没有掉</li>
-          <li>容易忽略的：奖励被刷、对齐后通用能力掉了多少、数据还能撑多久</li>
-          <li>我常问的：这次涨分主要来自基座，还是后训练？换个任务还成立吗</li>
+          <li>先练底子：训练数据怎么配、模型太大怎么拆开跑、一次能读多长的内容</li>
+          <li>再调答案：按人的偏好把回答调顺、打分标准靠不靠谱、调完别的题会不会变差</li>
+          <li>容易忽略的：分数被刷上去但其实没学会、调完反而变笨、好数据快用完了</li>
+          <li>我常问的：这次涨分主要来自底子，还是后面调的？换个任务还成立吗</li>
         </ul>
       </li>
-      <li><strong>多模态 / 视频与图像生成</strong>（重点）
+      <li><strong>视频与图像生成</strong>（重点）
         <ul>
-          <li>数据：视频和图像语料怎么清洗、怎么配比，基本决定生成能不能控得住</li>
-          <li>生成结构：DiT / flow matching 这类框架、长视频的时序一致性、图像侧怎么加控制条件</li>
-          <li>参考与编辑：主体一致性、按指令改图改视频、用奖励模型继续优化效果</li>
+          <li>数据：视频和图片素材怎么挑、怎么洗、比例怎么配，先决定了生成能不能控得住</li>
+          <li>怎么生成：画面是一步步从噪声里"描"出来的，骨架怎么搭、长视频前后会不会跳、改图时怎么加条件</li>
+          <li>照着参考改：给一张参考图，人物前后长得一不一样；一句话能不能改对地方；再用打分模型把效果往上推</li>
           <li>语音顺带覆盖，不单独展开</li>
           <li>我常问的：效果最后靠什么评？自动分数和真人看的结果差多少</li>
         </ul>
       </li>
-      <li><strong>Infra / 推理系统</strong>
+      <li><strong>训练和推理的工程</strong>
         <ul>
-          <li>训练：并行怎么切、集群利用率、训练稳不稳</li>
-          <li>推理：prefill-decode 分离、KV cache、单个 token 的成本</li>
-          <li>容易忽略的：量化之后精度掉了多少、调度一挤就变慢</li>
-          <li>我常问的：服务什么模型、并发多少、优化前的基线是什么</li>
+          <li>训练：一堆机器怎么分工、机器有没有闲着、跑起来稳不稳</li>
+          <li>推理：先读懂问题、再一个字一个字往外吐，这两段分开算；算过的存起来少算一遍；生成一千字要花多少钱</li>
+          <li>容易忽略的：把模型压小省显存，准确率掉多少；机器一挤就变慢</li>
+          <li>我常问的：服务什么模型、同时来多少请求、改之前是什么水平</li>
         </ul>
       </li>
       <li><strong>大模型评测</strong>（横切维度，单独列出）
         <ul>
-          <li>用什么口径：能验答案的任务看通过率，开放生成看人怎么评，视频看时序一致性，别一套榜单套所有场景</li>
-          <li>怎么落到线上：离线指标、灰度 A/B、时延和成本、人工抽检的回归集</li>
-          <li>容易失真的地方：judge 偏爱自己的答案、评测集被污染、榜单涨分不等于线上有用</li>
+          <li>用什么口径：有标准答案的题看答对多少，开放题看人怎么打分，视频看画面连不连贯；别一套榜单套所有场景</li>
+          <li>怎么落到线上：离线跑出来的分数，先放给一小部分用户试，再看速度和成本；另外留一组题定期人工复看</li>
+          <li>容易失真的地方：让模型当裁判，它偏爱自己那类答案；评测题可能早被练过；榜单涨分不等于线上真有用</li>
           <li>我常问的：这个分数涨了，最后对业务到底有没有用</li>
         </ul>
       </li>
@@ -111,28 +115,28 @@
 
     <h2 id="who">可以和谁聊</h2>
     <details><summary><strong>研究员</strong>　想看看方向，或比较不同团队的做法</summary><p>先聊你正在解的问题、负责的是哪一段，再聊下一个问题值不值得继续投入。</p></details>
-    <details><summary><strong>Infra 与系统</strong>　关心训练效率和推理成本</summary><p>我会问得具体些：多大的集群、服务什么模型、并发和延迟目标是什么、瓶颈卡在哪。</p></details>
-    <details><summary><strong>多模态与生成</strong>　做视频、图像生成的</summary><p>数据怎么配、生成结果怎么控、效果怎么评，这些比岗位清单更值得先聊清楚。</p></details>
+    <details><summary><strong>训练与推理</strong>　关心训练效率和推理成本</summary><p>我会问得具体些：多大的集群、跑什么模型、同时来多少请求、多快要有结果、卡在哪。</p></details>
+    <details><summary><strong>视频与图像</strong>　做视频、图像生成的</summary><p>素材怎么配、生成结果怎么控、效果怎么评，这些比岗位清单更值得先聊清楚。</p></details>
     <details><summary><strong>暂时不想动的人</strong>　只想先了解行业在发生什么</summary><p>不做任何决定也没关系。先匿名聊点近况，也行。</p></details>
 
     <h2 id="teams">常聊的一线团队</h2>
     <p>按公司归类，写到具体团队、在做的方向和办公地点。完整版在<a href="https://nikoyyl21.github.io/#teams">介绍页</a>，可以按城市筛选。</p>
     <ul>
-      <li><strong>阿里 · 千问 / 通义</strong>（杭州 / 北京）：基础模型预训练与后训练、Qwen-VL 多模态、Agent 与 Code 方向</li>
-      <li><strong>腾讯 · 混元</strong>（深圳 / 北京）：视频与图像生成、基模后训练对齐、训练与推理系统</li>
-      <li><strong>字节 · Seed</strong>（北京 / 上海 / 杭州）：基座预训练、Agentic 与 Code 后训练、数据全链路</li>
-      <li><strong>智谱 · GLM</strong>（北京）：GLM 基座、多模态与 Agent、CodeGeeX 代码方向</li>
-      <li><strong>快手 · 可灵 / Keye / KAT</strong>（北京）：视频生成、多模态理解、文本基座</li>
-      <li><strong>美团 · LongCat</strong>（北京）：LLM 预训练与基模、dLLM 与 RL 对齐</li>
-      <li><strong>阶跃星辰 · Step</strong>（上海 / 北京）：文本基座 MoE、多模态生成、训练与推理系统</li>
-      <li><strong>蚂蚁集团 · 百灵</strong>（杭州 / 北京 / 上海）：垂域后训练、Agent / dLLM 后训练</li>
-      <li><strong>百度 · 文心</strong>（北京）：基模与多模态、图像算法</li>
-      <li><strong>MiniMax</strong>（上海）：基座全链路、长上下文与推理效率</li>
+      <li><strong>阿里 · 千问 / 通义</strong>（杭州 / 北京）：基础模型训练与调优、Qwen-VL 看图答题、智能体与代码方向</li>
+      <li><strong>腾讯 · 混元</strong>（深圳 / 北京）：视频与图像生成、基础模型调优对齐、训练与推理工程</li>
+      <li><strong>字节 · Seed</strong>（北京 / 上海 / 杭州）：基础模型预训练、智能体与代码调优、数据全链路</li>
+      <li><strong>智谱 · GLM</strong>（北京）：GLM 基础模型、多模态与智能体、CodeGeeX 代码方向</li>
+      <li><strong>快手 · 可灵 / Keye / KAT</strong>（北京）：视频生成、看懂视频、文本大模型</li>
+      <li><strong>美团 · LongCat</strong>（北京）：大模型预训练与基础模型、文字生成模型调优</li>
+      <li><strong>阶跃星辰 · Step</strong>（上海 / 北京）：文本大模型、多模态生成、训练与推理工程</li>
+      <li><strong>蚂蚁集团 · 百灵</strong>（杭州 / 北京 / 上海）：行业场景调优、智能体与文字生成调优</li>
+      <li><strong>百度 · 文心</strong>（北京）：基础模型与多模态、图像算法</li>
+      <li><strong>MiniMax</strong>（上海）：基础模型全链路、长内容与推理效率</li>
     </ul>
-    <blockquote>按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时在招 JD。具体岗位、层级、HC 和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。</blockquote>
+    <blockquote>按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时招聘清单。具体岗位、层级、招几个人和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。</blockquote>
 
     <h2>聊的时候我在意什么</h2>
-    <p>先听你做过什么。从具体问题和你负责的那一段开始，不拿 JD 关键词套人。</p>
+    <p>先听你做过什么。从具体问题和你负责的那一段开始，不拿岗位清单里的关键词套人。</p>
     <p>给能用的横向信息：同一个方向上不同团队的做法和差别，包括不那么好看的部分，我会照实说。</p>
     <p>不合适会直说，不硬推。</p>
 
@@ -147,12 +151,12 @@
     <p class="center"><strong>点开「简单聊 15 mins」看电话，先聊 15 分钟，不用附简历</strong></p>
 
     <h2>最近在看的</h2>
-    <p>最近更新 2026-11-05　|　最近在看两件事：后训练里的奖励信号怎么验，以及视频生成的效果到底该怎么评。</p>
+    <p>最近更新 2026-11-05　|　最近在看两件事：给回答打分的标准怎么验，以及视频生成的效果到底该怎么评。</p>
 
     <hr>
     <h2 id="english">English</h2>
     <p>I work as a headhunter in the foundation model space, mostly on foundation models and multimodal generation. I read public technical reports and papers, and pay attention to how teams and their focus shift. When we talk, I start with the problem you have actually worked on, not with a job list.</p>
-    <p><strong>What I follow</strong> — four areas, each with the questions I usually ask. Foundation models and post-training: data mixture, whether MoE routing really saves compute, how rewards are verified, and whether a gain still holds on another task. Multimodal generation, mainly video and image: data curation, DiT / flow matching, consistency over longer clips, reference-based and instruction-driven editing; speech is only mentioned in passing. Systems and inference: parallelism, cluster utilisation, prefill-decode disaggregation, KV cache and unit token cost. LLM evaluation is a separate track: which metric fits which task, how offline scores reach production, and where those scores mislead.</p>
+    <p><strong>What I follow</strong> — four areas, each with the questions I usually ask. Text models and tuning: how training data is mixed, how a very large model is split across machines, how long an input it can read, whether the scoring standard holds up, and whether a gain survives on another task. Video and image generation: how clips and images are picked and cleaned, how a picture is built up step by step from noise, whether longer clips stay consistent, and how reference images and one-line edits are handled; speech is only mentioned in passing. Training and serving: how machines share the work, whether they sit idle, splitting "read the question" from "write the answer", reusing what has already been computed, and what a thousand words cost. Evaluation is a separate track: which score fits which task, how an offline score reaches real users, and where those scores mislead.</p>
     <p><strong>Teams I talk about</strong> — a public-source map of first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu and MiniMax. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at <a href="https://nikoyyl21.github.io/#teams">nikoyyl21.github.io/#teams</a></p>
     <p><strong>A bit about me</strong> — I'm Petry. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.</p>
     <p><strong>The only ask</strong> — a 15-minute conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.</p>
@@ -161,7 +165,7 @@
     <hr>
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/agi-strip-dark.svg">
-      <img src="assets/agi-strip-light.svg" alt="Motif: sparse activation flowing into shared representations">
+      <img src="assets/agi-strip-light.svg" alt="A light-green hand-drawn strip with a small star doodle">
     </picture>
     <p class="center"><sub>团队方向均来自公开资料　|　不含候选人信息与未公开岗位细节</sub></p>
   </div>
