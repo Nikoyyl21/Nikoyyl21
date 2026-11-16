@@ -1,6 +1,7 @@
 <!-- ==========================================================
      已上线版本。每个可编辑区块都用注释标了出来。
-     全局规则：不出现中文姓名、不出现未授权客户名、不出现候选人信息。
+     全局规则：不出现中文姓名、不出现候选人信息、不写未公开的岗位与 HC 细节。
+     团队信息只写公开可查的方向和常驻城市，不写成合作客户名单或实时在招 JD。
      语言口径：中文短句，术语只做标签，正文写具体场景和「我会问什么」。
      改稿清单见 EDIT-ME.md
      ========================================================== -->
@@ -20,7 +21,7 @@
 
 **想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
 
-[方向](#scope) · [自我介绍](#intro) · [可以和谁聊](#who) · [怎么联系](#contact) · [English](#english)
+[方向](#scope) · [自我介绍](#intro) · [可以和谁聊](#who) · [团队地图](#teams) · [怎么联系](#contact) · [English](#english)
 
 </div>
 
@@ -120,7 +121,28 @@
 
 </details>
 
-<!-- ===== 区块 5：可信度（有公开文章就把链接加在这段） ===== -->
+<!-- ===== 区块 5：常聊的一线团队（公开资料整理，不写在招 JD） ===== -->
+
+<a name="teams"></a>
+
+## 常聊的一线团队
+
+按公司归类，写到具体团队、在做的方向和办公地点。完整版在[介绍页](https://nikoyyl21.github.io/#teams)，可以按城市筛选。
+
+- **阿里 · 千问 / 通义**（杭州 / 北京）：基础模型预训练与后训练、Qwen-VL 多模态、Agent 与 Code 方向
+- **腾讯 · 混元**（深圳 / 北京）：视频与图像生成、基模后训练对齐、训练与推理系统
+- **字节 · Seed**（北京 / 上海 / 杭州）：基座预训练、Agentic 与 Code 后训练、数据全链路
+- **智谱 · GLM**（北京）：GLM 基座、多模态与 Agent、CodeGeeX 代码方向
+- **快手 · 可灵 / Keye / KAT**（北京）：视频生成、多模态理解、文本基座
+- **美团 · LongCat**（北京）：LLM 预训练与基模、dLLM 与 RL 对齐
+- **阶跃星辰 · Step**（上海 / 北京）：文本基座 MoE、多模态生成、训练与推理系统
+- **蚂蚁集团 · 百灵**（杭州 / 北京 / 上海）：垂域后训练、Agent / dLLM 后训练
+- **百度 · 文心**（北京）：基模与多模态、图像算法
+- **MiniMax**（上海）：基座全链路、长上下文与推理效率
+
+> 按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时在招 JD。具体岗位、层级、HC 和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。
+
+<!-- ===== 区块 6：可信度（有公开文章就把链接加在这段） ===== -->
 
 ## 聊的时候我在意什么
 
@@ -130,7 +152,7 @@
 
 不合适会直说，不硬推。
 
-<!-- ===== 区块 6：联系（已上线，以后有预约链接或二维码再加行） ===== -->
+<!-- ===== 区块 7：联系（已上线，以后有预约链接或二维码再加行） ===== -->
 <!-- 顶部还有一条落地页入口，指向 https://nikoyyl21.github.io/ -->
 
 <a name="contact"></a>
@@ -151,7 +173,7 @@
 
 </div>
 
-<!-- ===== 区块 7：每周动态（自动，不用手改） ===== -->
+<!-- ===== 区块 8：每周动态（自动，不用手改） ===== -->
 
 ## 最近在看的
 
@@ -171,6 +193,8 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 **What I follow** — four areas, each with the questions I usually ask. Foundation models and post-training: data mixture, whether MoE routing really saves compute, how rewards are verified, and whether a gain still holds on another task. Multimodal generation, mainly video and image: data curation, DiT / flow matching, consistency over longer clips, reference-based and instruction-driven editing; speech is only mentioned in passing. Systems and inference: parallelism, cluster utilisation, prefill-decode disaggregation, KV cache and unit token cost. LLM evaluation is a separate track: which metric fits which task, how offline scores reach production, and where those scores mislead.
 
+**Teams I talk about** — a public-source map of first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu and MiniMax. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
+
 **A bit about me** — I'm Petry. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.
 
 **The only ask** — a 15-minute conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
@@ -186,6 +210,6 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 <div align="center">
 
-<sub>公开资料整理　|　不含候选人信息与在招团队细节</sub>
+<sub>团队方向均来自公开资料　|　不含候选人信息与未公开岗位细节</sub>
 
 </div>
