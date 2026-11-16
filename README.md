@@ -128,20 +128,35 @@
 
 ## 常聊的一线团队
 
-按公司归类，写到具体团队、在做的方向和办公地点。完整版在[介绍页](https://nikoyyl21.github.io/#teams)，可以按城市筛选。
+按公司归类，写到具体团队、在做的方向和办公地点，目前整理到 18 家。完整版在[介绍页](https://nikoyyl21.github.io/#teams)，可以按城市筛选。
 
 - **阿里 · 千问 / 通义**（杭州 / 北京）：基础模型训练与调优、Qwen-VL 看图答题、智能体与代码方向
 - **腾讯 · 混元**（深圳 / 北京）：视频与图像生成、基础模型调优对齐、训练与推理工程
-- **字节 · Seed**（北京 / 上海 / 杭州）：基础模型预训练、智能体与代码调优、数据全链路
+- **字节 · Seed**（北京 / 上海 / 杭州 / 深圳）：基础模型预训练、智能体与代码调优、数据全链路
 - **智谱 · GLM**（北京）：GLM 基础模型、多模态与智能体、CodeGeeX 代码方向
 - **快手 · 可灵 / Keye / KAT**（北京）：视频生成、看懂视频、文本大模型
 - **美团 · LongCat**（北京）：大模型预训练与基础模型、文字生成模型调优
 - **阶跃星辰 · Step**（上海 / 北京）：文本大模型、多模态生成、训练与推理工程
 - **蚂蚁集团 · 百灵**（杭州 / 北京 / 上海）：行业场景调优、智能体与文字生成调优
 - **百度 · 文心**（北京）：基础模型与多模态、图像算法
-- **MiniMax**（上海）：基础模型全链路、长内容与推理效率
+- **MiniMax**（上海 / 北京）：基础模型全链路、长内容与推理效率
+- **小红书 · Dots**（上海 / 杭州 / 北京）：Dots 基础模型整条链路、社区与搜索算法
+- **米哈游 · anuttacon**（上海 / 北京）：前沿研究方向、应用调优落地
+- **Shopee**（北京 / 上海）：基础模型团队、应用与智能体
+- **九坤 · 至知**（北京 / 上海）：至知基座研究院、总部智能体团队
+- **盛大**（上海）：智能体算法
+- **B站 · 哔哩哔哩**（上海）：多模态与智能体、自研多模态基础模型
+- **记忆张量**（上海）：基础模型团队
+- **面壁智能**（北京 / 上海）：行业智能体、小模型与工作台
 
 > 按公开资料整理，写的是这些团队长期在做的方向和常见职位画像，不是实时招聘清单。具体岗位、层级、招几个人和办公地点，聊的时候按最新情况说；哪些是我在跟的项目，也只在一对一里讲。
+
+<details>
+<summary><b>随手记 · 点开看一句</b></summary>
+
+榜单涨分不等于线上真有用。聊方向的时候，这句我常说。
+
+</details>
 
 <!-- ===== 区块 6：可信度（有公开文章就把链接加在这段） ===== -->
 
@@ -194,7 +209,7 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 **What I follow** — four areas, each with the questions I usually ask. Text models and tuning: how training data is mixed, how a very large model is split across machines, how long an input it can read, whether the scoring standard holds up, and whether a gain survives on another task. Video and image generation: how clips and images are picked and cleaned, how a picture is built up step by step from noise, whether longer clips stay consistent, and how reference images and one-line edits are handled; speech is only mentioned in passing. Training and serving: how machines share the work, whether they sit idle, splitting "read the question" from "write the answer", reusing what has already been computed, and what a thousand words cost. Evaluation is a separate track: which score fits which task, how an offline score reaches real users, and where those scores mislead.
 
-**Teams I talk about** — a public-source map of first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu and MiniMax. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
+**Teams I talk about** — a public-source map of 18 first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu, MiniMax, Xiaohongshu Dots, miHoYo anuttacon, Shopee, Ubiquant, Shanda, Bilibili, MemTensor and ModelBest. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
 
 **A bit about me** — I'm Petry. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.
 
