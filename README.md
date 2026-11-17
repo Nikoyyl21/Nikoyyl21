@@ -8,8 +8,8 @@
      ========================================================== -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Nikoo, a light-green banner with hand-drawn sun and sprout doodles" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark-v2.svg">
+  <img src="assets/banner-light-v2.svg" alt="Nikoo, a light-green banner with hand-drawn sun and sprout doodles" width="100%">
 </picture>
 
 <div align="center">
