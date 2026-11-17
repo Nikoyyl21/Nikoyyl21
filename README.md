@@ -9,7 +9,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Petry, a light-green banner with hand-drawn sun and sprout doodles" width="100%">
+  <img src="assets/banner-light.svg" alt="Nikoo, a light-green banner with hand-drawn sun and sprout doodles" width="100%">
 </picture>
 
 <div align="center">
@@ -211,7 +211,7 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 **Teams I talk about** — a public-source map of 18 first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu, MiniMax, Xiaohongshu Dots, miHoYo anuttacon, Shopee, Ubiquant, Shanda, Bilibili, MemTensor and ModelBest. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
 
-**A bit about me** — I'm Petry. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.
+**A bit about me** — I'm Nikoo. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.
 
 **The only ask** — a 15-minute conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 

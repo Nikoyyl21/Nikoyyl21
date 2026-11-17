@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Petry, a friendly page about foundation models, video generation and teams">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Nikoo, a friendly page about foundation models, video generation and teams">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0A1D15"/>
@@ -24,7 +24,7 @@
   </g>
   <circle cx="930" cy="150" r="215" fill="url(#glow)"/>
 
-  <text x="64" y="112" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E9F7EE" letter-spacing="-1">Petry</text>
+  <text x="64" y="112" font-family="Helvetica,Arial,sans-serif" font-size="54" font-weight="600" fill="#E9F7EE" letter-spacing="-1">Nikoo</text>
   <text x="66" y="152" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#A2D6B7">models / video / teams / what's next</text>
   <rect x="66" y="178" width="56" height="4" rx="2" fill="#6FD79C"/>
   <text x="66" y="212" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8FCBA6">start with what you are working on</text>
