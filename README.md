@@ -20,16 +20,18 @@
 
 `模型怎么练`　`视频怎么生成`　`成本怎么算`　`效果怎么评`
 
-**想聊就点开下面「简单聊 15 mins」看电话**　或加微信 `Hello_le_0502`　15 分钟，可以先不透露姓名和现单位
+**想聊就加个微信 `Hello_le_0502`，备注一句想聊什么就行**　不用急着约时间，可以先不透露姓名和现单位
 
 [方向](#scope) · [自我介绍](#intro) · [可以和谁聊](#who) · [团队地图](#teams) · [怎么联系](#contact) · [English](#english)
 
 </div>
 
 <details>
-<summary><b>简单聊 15 mins · 点开看电话</b></summary>
+<summary><b>加微信聊聊 · 点开看微信号</b></summary>
 
-电话 **18357766985**，直接拨或者存一下都行。
+微信 **Hello_le_0502**，加的时候备注一句想聊什么就行。
+
+更习惯打电话也可以：电话 **18357766985**（点开看，不用急着拨）。
 
 一对一沟通，可以先不透露姓名和现单位，不用附简历。
 
@@ -93,7 +95,7 @@ const nikoo = {
   read: "公开技术报告和团队分工",
   chat: "从你做过的具体问题聊起",
   promises: ["照实说", "不硬推", "不共享给第三方"],
-  if (you.asking === "值不值得聊") return "先聊 15 分钟，不用准备简历 :)"
+  if (you.asking === "值不值得聊") return "加个微信，发句想聊什么就行 :)"
 };
 // 不是真代码，就是想让你 10 秒内知道我大概是谁、怎么聊
 ```
@@ -142,7 +144,7 @@ const nikoo = {
 
 </details>
 
-<!-- ===== 区块 5：常聊的一线团队（公开资料整理，不写实时招聘清单） ===== -->
+<!-- ===== 区块 5：常聊的一些团队（公开资料整理，不写实时招聘清单） ===== -->
 
 <a name="teams"></a>
 
@@ -197,9 +199,9 @@ const nikoo = {
 
 | | |
 | :--- | :--- |
-| 电话 | 点开上方「简单聊 15 mins」查看，直接聊 15 分钟 |
-| 微信 | `Hello_le_0502`（加的时候备注一句想聊什么就行） |
-| 邮箱 | [18357766985@163.com](mailto:18357766985@163.com)（备选） |
+| 微信（推荐） | `Hello_le_0502`（加的时候备注一句想聊什么就行） |
+| 电话（备选） | **18357766985**，想直接打再拨，不用急着约时间 |
+| 邮箱（备选） | [18357766985@163.com](mailto:18357766985@163.com) |
 
 **聊之前，可以先告诉我两件事**：你在做什么，接下来想做什么。不用附简历，也不用先说姓名和单位。
 
@@ -209,7 +211,7 @@ const nikoo = {
 
 <div align="center">
 
-**点开「简单聊 15 mins」看电话，先聊 15 分钟，不用附简历**
+**加个微信 `Hello_le_0502`，备注一句想聊什么，不用附简历**
 
 </div>
 
@@ -237,9 +239,9 @@ I work as a headhunter in the foundation model space, mostly on foundation model
 
 **A bit about me** — I'm Nikoo. I have been working in the AI space for a long time and stay close to what is happening on the ground: how teams are progressing, how they are reorganising, and what people in the field are actually saying. Over the past year I have also helped many people think through career questions, from choosing between roles and preparing for interviews to talking about compensation. For me this is not just about recommending roles; I would rather be a place to exchange what is happening in the industry. Even if you are not looking at any opportunity right now, feel free to add me on WeChat. We can talk about the technology and what we are seeing, make a friend on the same path, and keep each other posted when something comes up.
 
-**The only ask** — a 15-minute conversation. One-to-one, never shared with third parties, no need to reveal your name or current employer.
+**The only ask** — a short chat. One-to-one, never shared with third parties, no need to reveal your name or current employer.
 
-**Contact** — open the "15-min chat" panel above to reveal my phone number, or add WeChat `Hello_le_0502`. A short call is enough; no CV, no name, no current employer needed. **Full profile** — https://nikoyyl21.github.io/
+**Contact** — add me on WeChat `Hello_le_0502` (just note what you'd like to talk about); no CV, no name, no current employer needed. Phone `18357766985` and email are there too if you prefer. **Full profile** — https://nikoyyl21.github.io/
 
 ---
 
