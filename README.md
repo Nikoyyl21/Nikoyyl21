@@ -50,11 +50,12 @@
 
 ## 方向
 
-- **文本大模型与调优**（重点）
-  - 先练底子：训练数据怎么配、模型太大怎么拆开跑、一次能读多长的内容
+- **文本基座：预训练与调优**（重点）
+  - 预训练数据：素材从哪来、网页和书和代码各占多少、重复和脏数据怎么洗掉、什么算一份好语料
+  - 模型结构：模型做多大、堆多少层、注意力怎么改、一次能读多长（上下文），还有没有用「多位专家分工」的省算力做法（MoE）
   - 再调答案：按人的偏好把回答调顺、打分标准靠不靠谱、调完别的题会不会变差
-  - 容易忽略的：分数被刷上去但其实没学会、调完反而变笨、好数据快用完了
-  - 我常问的：这次涨分主要来自底子，还是后面调的？换个任务还成立吗
+  - 容易忽略的：数据里混进了评测题、分数刷上去但其实没学会、调完反而变笨
+  - 我常问的：底子没练好的部分，靠后面调能补回来吗？换个任务还成立吗
 - **视频与图像生成**（重点）
   - 数据：视频和图片素材怎么挑、怎么洗、比例怎么配，先决定了生成能不能控得住
   - 怎么生成：画面是一步步从噪声里"描"出来的，骨架怎么搭、长视频前后会不会跳、改图时怎么加条件
@@ -230,7 +231,7 @@ const nikoo = {
 
 I work as a headhunter in the foundation model space, mostly on foundation models and multimodal generation. I read public technical reports and papers, and pay attention to how teams and their focus shift. When we talk, I start with the problem you have actually worked on, not with a job list.
 
-**What I follow** — four areas, each with the questions I usually ask. Text models and tuning: how training data is mixed, how a very large model is split across machines, how long an input it can read, whether the scoring standard holds up, and whether a gain survives on another task. Video and image generation: how clips and images are picked and cleaned, how a picture is built up step by step from noise, whether longer clips stay consistent, and how reference images and one-line edits are handled; speech is only mentioned in passing. Training and serving: how machines share the work, whether they sit idle, splitting "read the question" from "write the answer", reusing what has already been computed, and what a thousand words cost. Evaluation is a separate track: which score fits which task, how an offline score reaches real users, and where those scores mislead.
+**What I follow** — four areas, each with the questions I usually ask. Text foundation models, from pretraining to tuning: where pretraining data comes from and how it is mixed and cleaned (web pages, books, code, deduplication), how the model is structured (size, layers, attention, context length, mixture-of-experts), whether the scoring standard holds up after tuning, and how much of a weak foundation tuning can actually fix. Video and image generation: how clips and images are picked and cleaned, how a picture is built up step by step from noise, whether longer clips stay consistent, and how reference images and one-line edits are handled; speech is only mentioned in passing. Training and serving: how machines share the work, whether they sit idle, splitting "read the question" from "write the answer", reusing what has already been computed, and what a thousand words cost. Evaluation is a separate track: which score fits which task, how an offline score reaches real users, and where those scores mislead.
 
 **Teams I talk about** — a public-source map of 18 first-party teams and what they work on, grouped by company and city: Alibaba Qwen / Tongyi, Tencent Hunyuan, ByteDance Seed, Zhipu GLM, Kuaishou Kling / Keye / KAT, Meituan LongCat, StepFun, Ant, Baidu, MiniMax, Xiaohongshu Dots, miHoYo anuttacon, Shopee, Ubiquant, Shanda, Bilibili, MemTensor and ModelBest. It lists long-running research directions and where those teams are based, not live openings or headcount. The filterable version is at https://nikoyyl21.github.io/#teams
 
